@@ -1,5 +1,3 @@
-# Summary
-
 ## 快速入门
 
 * [1 xchain环境部署](快速入门/1 xchain环境部署.md) 
