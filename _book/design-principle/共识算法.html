@@ -1,0 +1,541 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4共识算法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="账本状态机.html" />
+    
+    
+    <link rel="prev" href="P2P网络.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quick-start/">
+            
+                <a href="../quick-start/">
+            
+                    
+                    快速入门 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../quick-start/xchain环境部署.html">
+            
+                <a href="../quick-start/xchain环境部署.html">
+            
+                    
+                    1xchain环境部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../quick-start/入门操作.html">
+            
+                <a href="../quick-start/入门操作.html">
+            
+                    
+                    2入门操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../advance-use/">
+            
+                <a href="../advance-use/">
+            
+                    
+                    进阶使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../advance-use/三节点网络部署.html">
+            
+                <a href="../advance-use/三节点网络部署.html">
+            
+                    
+                    1三节点网络部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../advance-use/合约管理.html">
+            
+                <a href="../advance-use/合约管理.html">
+            
+                    
+                    2合约管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../advance-use/共识文档.html">
+            
+                <a href="../advance-use/共识文档.html">
+            
+                    
+                    3共识使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../advance-use/链上治理.html">
+            
+                <a href="../advance-use/链上治理.html">
+            
+                    
+                    4链上治理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../advance-use/平行链群组.html">
+            
+                <a href="../advance-use/平行链群组.html">
+            
+                    
+                    5平行链群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="README.md">
+            
+                <span>
+            
+                    
+                    设计原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="整体流程.html">
+            
+                <a href="整体流程.html">
+            
+                    
+                    1整体流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="密码学基础.html">
+            
+                <a href="密码学基础.html">
+            
+                    
+                    2密码学基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="P2P网络.html">
+            
+                <a href="P2P网络.html">
+            
+                    
+                    3P2P网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="共识算法.html">
+            
+                <a href="共识算法.html">
+            
+                    
+                    4共识算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="账本状态机.html">
+            
+                <a href="账本状态机.html">
+            
+                    
+                    5账本状态机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="权限管理.html">
+            
+                <a href="权限管理.html">
+            
+                    
+                    6权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="平行链群组.html">
+            
+                <a href="平行链群组.html">
+            
+                    
+                    7平行链群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4共识算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="41-&#x533A;&#x5757;&#x94FE;&#x5171;&#x8BC6;&#x673A;&#x5236;&#x6982;&#x8FF0;">4.1 &#x533A;&#x5757;&#x94FE;&#x5171;&#x8BC6;&#x673A;&#x5236;&#x6982;&#x8FF0;</h3>
+<p>&#x533A;&#x5757;&#x94FE;&#x7CFB;&#x7EDF;&#x591A;&#x6570;&#x91C7;&#x7528;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x8BBE;&#x8BA1;&#xFF0C;&#x8282;&#x70B9;&#x662F;&#x5206;&#x6563;&#x5728;&#x5404;&#x5904;&#xFF0C;&#x7CFB;&#x7EDF;&#x9700;&#x8981;&#x8BBE;&#x8BA1;&#x4E00;&#x5957;&#x5B8C;&#x5584;&#x7684;&#x5236;&#x5EA6;&#xFF0C;&#x4EE5;&#x7EF4;&#x62A4;&#x7CFB;&#x7EDF;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x4E0E;&#x516C;&#x5E73;&#x6027;&#xFF0C;&#x7EDF;&#x4E00;&#x533A;&#x5757;&#x94FE;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x5956;&#x52B1;&#x63D0;&#x4F9B;&#x8D44;&#x6E90;&#x7EF4;&#x62A4;&#x533A;&#x5757;&#x94FE;&#x7684;&#x4F7F;&#x7528;&#x8005;&#xFF0C;&#x4EE5;&#x53CA;&#x60E9;&#x7F5A;&#x6076;&#x610F;&#x7684;&#x5371;&#x5BB3;&#x8005;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x5236;&#x5EA6;&#xFF0C;&#x5FC5;&#x987B;&#x4F9D;&#x8D56;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x8BC1;&#x660E;&#xFF0C;&#x662F;&#x7531;&#x8C01;&#x53D6;&#x5F97;&#x4E86;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x94FE;&#x7684;&#x6253;&#x5305;&#x6743;(&#x6216;&#x79F0;&#x8BB0;&#x5E10;&#x6743;)&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6253;&#x5305;&#x8FD9;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x7684;&#x5956;&#x52B1;;&#x53C8;&#x6216;&#x8005;&#x662F;&#x8C01;&#x610F;&#x56FE;&#x8FDB;&#x884C;&#x5371;&#x5BB3;&#xFF0C;&#x5C31;&#x4F1A;&#x83B7;&#x5F97;&#x4E00;&#x5B9A;&#x7684;&#x60E9;&#x7F5A;&#xFF0C;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x533A;&#x5757;&#x94FE;&#x7CFB;&#x7EDF;&#x7684;&#x5171;&#x8BC6;&#x673A;&#x5236;&#x9700;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x968F;&#x7740;&#x533A;&#x5757;&#x94FE;&#x5E94;&#x7528;&#x843D;&#x5730;&#x573A;&#x666F;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#xFF0C;&#x5F88;&#x591A;&#x9002;&#x5E94;&#x4E0D;&#x540C;&#x5E94;&#x7528;&#x573A;&#x666F;&#x7684;&#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#x5148;&#x540E;&#x88AB;&#x63D0;&#x51FA;&#x3002;&#x4F46;&#x662F;&#x5728;&#x5F53;&#x524D;&#x7684;&#x6280;&#x672F;&#x80CC;&#x666F;&#x4E0B;&#xFF0C;&#x529F;&#x80FD;&#x8FC7;&#x4E8E;&#x5168;&#x9762;&#x7684;&#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#x65E0;&#x6CD5;&#x771F;&#x6B63;&#x53EF;&#x7528;&#x3002;&#x5728;&#x65B0;&#x4E00;&#x4EE3;&#x533A;&#x5757;&#x94FE;&#x5171;&#x8BC6;&#x673A;&#x5236;&#x7684;&#x8BBE;&#x8BA1;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF0C;&#x6709;&#x7684;&#x653E;&#x77E2;&#x7684;&#x9009;&#x62E9;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x3001;&#x8282;&#x80FD;&#x3001;&#x5B89;&#x5168;&#x7B49;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#xFF0C;&#x5BF9;&#x4E00;&#x4E9B;&#x539F;&#x5219;&#x652F;&#x6301;&#x5F3A;&#x5F31;&#x8FDB;&#x884C;&#x53D6;&#x820D;&#xFF0C;&#x5C06;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x4E0A;&#x63D0;&#x5347;&#x7CFB;&#x7EDF;&#x7684;&#x6574;&#x4F53;&#x8FD0;&#x884C;&#x6548;&#x7387;&#x3002;</p>
+<p>&#x6211;&#x4EEC; XuperChain &#x8BBE;&#x8BA1;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;&#x533A;&#x5757;&#x94FE;&#x6846;&#x67B6;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x8FDB;&#x884C;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;&#x5B9A;&#x5236;&#x3002; XuperChain &#x7684;&#x5171;&#x8BC6;&#x6A21;&#x5757;&#x8BBE;&#x8BA1;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x590D;&#x7528;&#x5E95;&#x5C42;&#x5171;&#x8BC6;&#x5B89;&#x5168;&#x7684;&#x5171;&#x8BC6;&#x6846;&#x67B6;&#xFF0C;&#x7528;&#x6237;&#x57FA;&#x4E8E;&#x8FD9;&#x6837;&#x7684;&#x6846;&#x67B6;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x5B9A;&#x4E49;&#x5176;&#x81EA;&#x5DF1;&#x7684;&#x94FE;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x8003;&#x8651;&#x5E95;&#x5C42;&#x7684;&#x5171;&#x8BC6;&#x5B89;&#x5168;&#x548C;&#x7F51;&#x7EDC;&#x5B89;&#x5168;&#x3002;</p>
+<h3 id="42-xuperchain&#x5171;&#x8BC6;&#x6846;&#x67B6;">4.2 xuperchain&#x5171;&#x8BC6;&#x6846;&#x67B6;</h3>
+<p>&#x5171;&#x8BC6;&#x6A21;&#x5757;&#x4F9D;&#x7167;XuperCore&#x6574;&#x4F53;&#x6846;&#x67B6;&#x8981;&#x6C42;&#x6765;&#x8FDB;&#x884C;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x73B0;&#xFF0C;&#x6574;&#x4F53;&#x5206;&#x6210;&#x4E24;&#x5C42;&#x8BBE;&#x8BA1;&#xFF0C;&#x4E0A;&#x5C42;&#x4E3A;&#x9886;&#x57DF;&#x670D;&#x52A1;&#x5C42;BCS&#xFF08;Blockchain Core Service&#xFF09;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x7684;&#x662F;&#x63D0;&#x4F9B;&#x7ED9;&#x7528;&#x6237;&#x7684;&#x56DB;&#x5927;&#x7C7B;&#x5171;&#x8BC6;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E0B;&#x5C42;&#x4E3A;&#x57FA;&#x7840;&#x7EC4;&#x4EF6;&#x5C42;Kernel&#x5C42;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x542B;&#x5F15;&#x64CE;&#x4F7F;&#x7528;&#x7684;&#x5171;&#x8BC6;&#x63A5;&#x53E3;&#xFF0C;&#x652F;&#x6301;&#x5171;&#x8BC6;&#x70ED;&#x63D2;&#x62D4;&#x5207;&#x6362;&#x7684;&#x53EF;&#x63D2;&#x62D4;&#x5171;&#x8BC6;&#x7EC4;&#x4EF6;&#xFF0C;BCS&#x5C42;&#x9700;&#x5B9E;&#x73B0;&#x7684;&#x5171;&#x8BC6;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#xFF0C;&#x4EE5;&#x53CA;&#x63D0;&#x4F9B;&#x62DC;&#x5360;&#x5EAD;&#x5BB9;&#x9519;&#x80FD;&#x529B;&#x7684;Chained-BFT&#x7EC4;&#x4EF6;&#x3002;&#x6574;&#x4F53;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="../images/consensus_frame.jpg" alt="frame"></p>
+<h3 id="43-xuperchain-&#x5171;&#x8BC6;&#x77E9;&#x9635;">4.3 XuperChain &#x5171;&#x8BC6;&#x77E9;&#x9635;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#x540D;&#x79F0;</th>
+<th>&#x786E;&#x8BA4;&#x6548;&#x7387;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single</td>
+<td>&#x7ACB;&#x5373;</td>
+<td></td>
+</tr>
+<tr>
+<td>PoW</td>
+<td>&#x7ECF;&#x9A8C;&#x503C;</td>
+<td>&#x6BD4;&#x7279;&#x5E01;&#x7ECF;&#x9A8C;&#x503C;&#x4E3A;7&#x4E2A;&#x5757;</td>
+</tr>
+<tr>
+<td>TDPoS</td>
+<td>&#x57FA;&#x4E8E;&#x6700;&#x957F;&#x94FE;</td>
+<td>&#x77FF;&#x5DE5;&#x8F6E;&#x503C;&#x671F;&#x95F4;&#x53EF;&#x4EA7;&#x751F;&#x56DE;&#x6EDA;</td>
+</tr>
+<tr>
+<td>XPoS</td>
+<td>3&#x4E2A;&#x533A;&#x5757;&#x4EE5;&#x540E;</td>
+<td>XPoS&#x4E3A;TDPoS&#x52A0;&#x4E0A;Chained-BFT&#x7EC4;&#x4EF6;&#xFF0C;&#x4E09;&#x4E2A;&#x533A;&#x5757;&#x540E;&#x843D;&#x76D8;&#x540E;&#x4E0D;&#x53EF;&#x56DE;&#x6EDA;&#x3002;</td>
+</tr>
+<tr>
+<td>PoA</td>
+<td>&#x57FA;&#x4E8E;&#x6700;&#x957F;&#x94FE;</td>
+<td>&#x77FF;&#x5DE5;&#x8F6E;&#x503C;&#x671F;&#x95F4;&#x53EF;&#x4EA7;&#x751F;&#x56DE;&#x6EDA;</td>
+</tr>
+<tr>
+<td>XPoA</td>
+<td>3&#x4E2A;&#x533A;&#x5757;&#x4EE5;&#x540E;</td>
+<td>XPoA&#x4E3A;PoA&#x52A0;&#x4E0A;Chained-BFT&#x7EC4;&#x4EF6;&#xFF0C;&#x4E09;&#x4E2A;&#x533A;&#x5757;&#x540E;&#x843D;&#x76D8;&#x540E;&#x4E0D;&#x53EF;&#x56DE;&#x6EDA;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="44-kernel&#x7EC4;&#x4EF6;-&#x5171;&#x8BC6;&#x4E3B;&#x6D41;&#x7A0B;">4.4 Kernel&#x7EC4;&#x4EF6;: &#x5171;&#x8BC6;&#x4E3B;&#x6D41;&#x7A0B;</h3>
+<p>Kernel&#x5C42;&#x7684;ConsensusInterface&#x5B9A;&#x4E49;&#x4E86;&#x5D4C;&#x5957;&#x5728;&#x5F15;&#x64CE;&#x6D41;&#x7A0B;&#x7684;&#x5171;&#x8BC6;&#x7EC4;&#x4EF6;&#x53C2;&#x4E0E;&#x903B;&#x8F91;&#xFF0C;&#x5176;&#x5BF9;&#x5916;&#x66B4;&#x9732;&#x4E3A;&#x4E00;&#x5957;&#x63A5;&#x53E3;&#xFF0C;&#x5177;&#x4F53;&#x6D41;&#x7A0B;&#x63A5;&#x53E3;&#x5982;&#x4E0B;&#x3002;</p>
+<p><img src="../images/consensus_interface.jpg" alt="consensus_interface"></p>
+<p>&#x5728;&#x533A;&#x5757;&#x540C;&#x6B65;&#x548C;&#x751F;&#x4EA7;&#x4E2D;&#x6D89;&#x53CA;&#x5230;&#x4E24;&#x4E2A;&#x89D2;&#x8272;&#xFF0C;&#x77FF;&#x5DE5;&#x548C;&#x540C;&#x6B65;&#x8005;&#xFF0C;&#x5728;&#x8FDB;&#x7A0B;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#xFF0C;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x89D2;&#x8272;&#x53EA;&#x80FD;&#x662F;&#x4E8C;&#x9009;&#x5176;&#x4E00;&#xFF0C;&#x8282;&#x70B9;&#x901A;&#x8FC7;&#x5171;&#x8BC6;&#x63D0;&#x4F9B;&#x7684;CompeteMaster&#x6765;&#x786E;&#x5B9A;&#x81EA;&#x8EAB;&#x662F;&#x5426;&#x662F;&#x77FF;&#x5DE5;&#xFF0C;&#x82E5;&#x662F;&#x5219;&#x8D70;&#x77FF;&#x5DE5;&#x6D41;&#x7A0B;&#xFF0C;&#x5C06;&#x4EA4;&#x6613;&#x6253;&#x5305;&#x5230;&#x533A;&#x5757;&#x5E76;&#x5E7F;&#x64AD;&#xFF1B;&#x82E5;&#x4E0D;&#x662F;&#x5219;&#x8D70;&#x540C;&#x6B65;&#x8005;&#x6D41;&#x7A0B;&#xFF0C;&#x4ECE;&#x7F51;&#x7EDC;&#x4E2D;&#x83B7;&#x53D6;&#x533A;&#x5757;&#xFF0C;&#x68C0;&#x67E5;&#x533A;&#x5757;&#x6709;&#x6548;&#x6027;&#x5E76;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x66F4;&#x65B0;&#x5230;&#x5230;&#x8D26;&#x672C;&#x3002;&#x5177;&#x4F53;&#x6D41;&#x7A0B;&#x7EC6;&#x8282;&#x5927;&#x81F4;&#x5982;&#x4E0B;:</p>
+<ul>
+<li>&#x7528;&#x6237;&#x63D0;&#x4EA4;&#x4EA4;&#x6613;&#x5230;&#x7F51;&#x7EDC;&#xFF0C;&#x4EA4;&#x6613;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x4F1A;&#x8FDB;&#x5165;&#x672A;&#x786E;&#x8BA4;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x8BB0;&#x5F55;&#x5728;&#x4EA4;&#x6613;&#x7684;&#x672A;&#x786E;&#x8BA4;&#x5217;&#x8868;&#x4E2D;&#x3002;</li>
+<li>&#x8282;&#x70B9;&#x901A;&#x8FC7;&#x8BBF;&#x95EE;Consensus&#x6A21;&#x5757;CompeteMaster&#x63A5;&#x53E3;&#x5224;&#x65AD;&#x81EA;&#x5DF1;&#x662F;&#x5426;&#x4E3A;&#x5F53;&#x524D;&#x7684;&#x77FF;&#x5DE5;&#x3002;</li>
+<li>&#x8282;&#x70B9;&#x82E5;&#x4E3A;&#x77FF;&#x5DE5;&#xFF0C;&#x9996;&#x5148;&#x901A;&#x8FC7;Consensus&#x6A21;&#x5757;ProcessBeforeMiner&#x63A5;&#x53E3;&#x66F4;&#x65B0;&#x81EA;&#x5DF1;&#x5171;&#x8BC6;&#x5185;&#x5B58;&#x72B6;&#x6001;&#xFF0C;&#x51C6;&#x5907;&#x5F00;&#x59CB;&#x751F;&#x4EA7;&#x533A;&#x5757;&#x3002;</li>
+<li>&#x8282;&#x70B9;&#x82E5;&#x4E3A;&#x77FF;&#x5DE5;&#xFF0C;&#x5C06;&#x672A;&#x786E;&#x8BA4;&#x6D88;&#x606F;&#x6253;&#x5305;&#x5230;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x533A;&#x5757;&#x3002;</li>
+<li>&#x8282;&#x70B9;&#x82E5;&#x4E3A;&#x77FF;&#x5DE5;&#xFF0C;&#x901A;&#x8FC7;Consensus&#x6A21;&#x5757;CalculateBlock&#x63A5;&#x53E3;&#x5BF9;&#x6253;&#x5305;&#x597D;&#x7684;&#x7B80;&#x5355;&#x533A;&#x5757;&#x8FDB;&#x884C;&#x5171;&#x8BC6;&#x76F8;&#x5173;&#x8FD0;&#x7B97;&#xFF08;&#x76EE;&#x524D;&#x4EC5;&#x5F53;&#x5728;PoW&#x5171;&#x8BC6;&#x4E2D;&#x9700;&#x8FDB;&#x884C;&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;&#xFF09;&#x3002;</li>
+<li>&#x82E5;&#x8282;&#x70B9;&#x4E3A;&#x77FF;&#x5DE5;&#xFF0C;&#x6700;&#x7EC8;&#x5C06;&#x6253;&#x5305;&#x597D;&#x7684;&#x533A;&#x5757;&#x5E7F;&#x64AD;&#x5230;P2P&#x7F51;&#x7EDC;&#x3002;</li>
+<li>&#x82E5;&#x8282;&#x70B9;&#x4E3A;&#x540C;&#x6B65;&#x8005;&#xFF0C;&#x901A;&#x8FC7;Consensus&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x7684;CheckMinerMatch&#x63A5;&#x53E3;&#x5BF9;&#x533A;&#x5757;&#x8FDB;&#x884C;&#x5408;&#x6CD5;&#x6027;&#x6821;&#x9A8C;&#x3002;</li>
+<li>&#x82E5;&#x8282;&#x70B9;&#x4E3A;&#x540C;&#x6B65;&#x8005;&#xFF0C;&#x901A;&#x8FC7;ProcessConfirmBlock&#x8FDB;&#x884C;&#x5171;&#x8BC6;&#x5185;&#x5B58;&#x66F4;&#x65B0;&#x3002;</li>
+</ul>
+<p>&#x6240;&#x6709;&#x5171;&#x8BC6;&#x5747;&#x5B9E;&#x73B0;GetConsensusStatus&#xFF0C;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x63D0;&#x4F9B;&#x8BFB;&#x63A5;&#x53E3;&#x4EE5;&#x4FBF;&#x5C55;&#x793A;&#x5F53;&#x524D;&#x5171;&#x8BC6;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="45-kernel&#x7EC4;&#x4EF6;-pluggable-consensus&#x53EF;&#x63D2;&#x62D4;&#x5171;&#x8BC6;">4.5 Kernel&#x7EC4;&#x4EF6;: Pluggable Consensus&#x53EF;&#x63D2;&#x62D4;&#x5171;&#x8BC6;</h3>
+<p>&#x53EF;&#x63D2;&#x62D4;&#x5171;&#x8BC6;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;&#x4E86;&#x53EF;&#x70ED;&#x63D2;&#x62D4;&#x7684;&#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#x66FF;&#x6362;&#x66F4;&#x65B0;&#x80FD;&#x529B;&#x3002;&#x7528;&#x6237;&#x53EF;&#x6839;&#x636E;&#x201C;&#x63D0;&#x6848;-&#x6295;&#x7968;&#x201D;&#x6CBB;&#x7406;&#x6D41;&#x7A0B;&#x8FDB;&#x884C;&#x5171;&#x8BC6;&#x5347;&#x7EA7;&#xFF0C;&#x5171;&#x8BC6;&#x5347;&#x7EA7;&#x540E;&#xFF0C;&#x5168;&#x7F51;&#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#x5C06;&#x83B7;&#x5F97;&#x66F4;&#x65B0;&#x3002;Pluggable Consensus&#x7EC4;&#x4EF6;&#x4E5F;&#x5B9E;&#x73B0;&#x4E86;ConsensusInterface&#x63A5;&#x53E3;&#xFF0C;&#x4E3B;&#x6D41;&#x7A0B;&#x4E3B;&#x8981;&#x901A;&#x8FC7;&#x8C03;&#x7528;Pluggable Consensus&#x7684;&#x63A5;&#x53E3;&#x6765;&#x8FDB;&#x884C;&#x5171;&#x8BC6;&#x8BFB;&#x5199;&#x3002;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="../images/consensus_pluggable.jpg" alt="pluggable"></p>
+<h3 id="46-kernel&#x7EC4;&#x4EF6;-chained-bft">4.6 Kernel&#x7EC4;&#x4EF6;: Chained-BFT</h3>
+<p>Chained-BFT&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x4E86;Libra&#x9879;&#x76EE;&#x7684;Chained-Hotstuff&#x5206;&#x5E03;&#x5F0F;&#x4E00;&#x81F4;&#x6027;&#x7B97;&#x6CD5;&#x3002; XuperCore&#x57FA;&#x4E8E;&#x8BBA;&#x6587; <a href="https://dl.acm.org/doi/10.1145/3293611.3331591" target="_blank">HotStuff: BFT Consensus with Linearity and Responsiveness</a> &#x4EE5;&#x53CA;&#x8BBA;&#x6587; <a href="https://cryptorating.eu/whitepapers/Libra/libra-consensus-state-machine-replication-in-the-libra-blockchain.pdf" target="_blank">State Machine Replication in the Libra Blockchain</a> &#x5B9E;&#x73B0;&#x3002; &#x5728;Chained-Hotstuff&#x4E4B;&#x4E0A;&#xFF0C;&#x6211;&#x4EEC;&#x9488;&#x5BF9;&#x81EA;&#x8EAB;&#x7CFB;&#x7EDF;&#x7279;&#x6027;&#x5BF9;&#x7B97;&#x6CD5;&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x6539;&#x9020;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="P2P网络.html" class="navigation navigation-prev " aria-label="Previous page: 3P2P网络">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="账本状态机.html" class="navigation navigation-next " aria-label="Next page: 5账本状态机">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4共识算法","level":"1.4.4","depth":2,"next":{"title":"5账本状态机","level":"1.4.5","depth":2,"path":"design-principle/账本状态机.md","ref":"design-principle/账本状态机.md","articles":[]},"previous":{"title":"3P2P网络","level":"1.4.3","depth":2,"path":"design-principle/P2P网络.md","ref":"design-principle/P2P网络.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"design-principle/共识算法.md","mtime":"2021-11-05T07:41:29.038Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-05T07:41:35.225Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
