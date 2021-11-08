@@ -9,6 +9,12 @@
 	* [链上治理](advance-use/链上治理.md)
 	* [平行链群组](advance-use/平行链群组.md)
 
+* [开发手册](dev-manual/README.md)
+	* [GO-SDK使用说明](dev-manual/GO-SDK使用说明.md)
+	* [JS-SDK使用说明](dev-manual/JS-SDK使用说明.md)
+	* [Java-SDK使用说明](dev-manual/Java-SDK使用说明.md)
+	* [XuperChain-rpc接口](dev-manual/XuperChain-RPC接口.md)
+
 * [设计原理](design-principle/README.md)
 	* [整体流程](design-principle/整体流程.md)
 	* [密码学基础](design-principle/密码学基础.md)
