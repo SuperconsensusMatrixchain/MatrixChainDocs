@@ -8,6 +8,8 @@
 	* [共识使用](advance-use/共识文档.md)
 	* [链上治理](advance-use/链上治理.md)
 	* [平行链群组](advance-use/平行链群组.md)
+	* [权限管理](权限管理ACL.md)
+	* [联盟链](联盟链.md)
 
 * [开发手册](dev-manual/README.md)
 	* [GO-SDK使用说明](dev-manual/GO-SDK使用说明.md)
