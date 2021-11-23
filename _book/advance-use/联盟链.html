@@ -556,66 +556,73 @@ cp front/conf/front.yaml xuperchain/testnet/node1/conf/
 <li>&#x4FEE;&#x6539;&#x7BA1;&#x7406;&#x5458;&#x914D;&#x7F6E;</li>
 </ol>
 <p>&#x8FDB;&#x5165;output&#x76EE;&#x5F55;&#x7684;caserver&#x4E2D;&#xFF0C;&#x6709; bin/ca-server &#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x4EE5;&#x53CA; conf/caserver.yaml &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x5185;&#x5BB9;&#x4E3A; caAdmin&#xFF0C;&#x4EE3;&#x8868; CA &#x7684;&#x6839;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x53EF;&#x4EE5;&#x6267;&#x884C; CA &#x6240;&#x6709;&#x64CD;&#x4F5C;&#x3002; &#x7531;&#x4E8E;&#x672C;&#x6B21;&#x642D;&#x5EFA;&#x7684;&#x662F; XuperChain &#x4E0B;&#x7684; testnet &#x4E09;&#x4E2A;&#x8282;&#x70B9;&#x7F51;&#x7EDC;&#xFF0C;&#x65B9;&#x4FBF;&#x8D77;&#x89C1;&#xFF0C;&#x5C06; node1 &#x7684;&#x8282;&#x70B9;&#x5730;&#x5740;&#x8BBE;&#x7F6E;&#x4E3A; CA &#x7684;&#x6839;&#x7BA1;&#x7406;&#x5458;&#x3002;&#x5C06; CA &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6539;&#x4E3A;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code># ca&#x7684;&#x6839;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;, &#x8BE5;&#x8D26;&#x6237;&#x53EF;&#x6267;&#x884C;ca&#x5185;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;
-caAdmin: TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
-#&#x6B64;&#x5730;&#x5740;&#x4E3A; node1 &#x8282;&#x70B9; data/keys/address &#x5730;&#x5740;
-</code></pre><ol>
-<li>&#x542F;&#x52A8; CA&#x3002;&#x542F;&#x52A8; CA &#x670D;&#x52A1;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5148;&#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x4EE5;&#x53CA;&#x5411;&#x7F51;&#x7EDC;&#x4E2D;&#x6DFB;&#x52A0;&#x8282;&#x70B9;&#x3002;
-```<h1 id="&#x65B0;&#x5EFA;runcash&#xFF0C;-&#x5199;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;">&#x65B0;&#x5EFA;runCa.sh&#xFF0C; &#x5199;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</h1>
-<h1 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h1>
-./bin/ca-server init<h1 id="&#x6DFB;&#x52A0;&#x7F51;&#x7EDC;">&#x6DFB;&#x52A0;&#x7F51;&#x7EDC;</h1>
-./bin/ca-server addNet --Net testnet --Addr TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY<h1 id="net-&#x4E3A;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;addr-&#x4E3A;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x5730;&#x5740;">Net &#x4E3A;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;Addr &#x4E3A;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x5730;&#x5740;</h1>
+<pre><code class="lang-yaml"><span class="hljs-comment">##ca&#x7684;&#x6839;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;, &#x8BE5;&#x8D26;&#x6237;&#x53EF;&#x6267;&#x884C;ca&#x5185;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;</span>
+<span class="hljs-attr">caAdmin:</span> TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
+<span class="hljs-comment">##&#x6B64;&#x5730;&#x5740;&#x4E3A; node1 &#x8282;&#x70B9; data/keys/address &#x5730;&#x5740;</span>
+</code></pre>
+<ol>
+<li>&#x542F;&#x52A8; CA&#x3002;&#x542F;&#x52A8; CA &#x670D;&#x52A1;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x4EE5;&#x53CA;&#x5411;&#x7F51;&#x7EDC;&#x4E2D;&#x6DFB;&#x52A0;&#x8282;&#x70B9;&#x3002;
+```<h2 id="&#x65B0;&#x5EFA;runcash&#xFF0C;-&#x5199;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;">&#x65B0;&#x5EFA;runCa.sh&#xFF0C; &#x5199;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</h2>
+<h2 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h2>
+./bin/ca-server init<h2 id="&#x6DFB;&#x52A0;&#x7F51;&#x7EDC;">&#x6DFB;&#x52A0;&#x7F51;&#x7EDC;</h2>
+./bin/ca-server addNet --Net testnet --Addr TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY<h2 id="net-&#x4E3A;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;addr-&#x4E3A;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x5730;&#x5740;">Net &#x4E3A;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;Addr &#x4E3A;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x5730;&#x5740;</h2>
 </li>
 </ol>
-<h1 id="&#x7F51;&#x7EDC;&#x4E2D;&#x6DFB;&#x52A0;&#x8282;&#x70B9;">&#x7F51;&#x7EDC;&#x4E2D;&#x6DFB;&#x52A0;&#x8282;&#x70B9;</h1>
+<h2 id="&#x7F51;&#x7EDC;&#x4E2D;&#x6DFB;&#x52A0;&#x8282;&#x70B9;">&#x7F51;&#x7EDC;&#x4E2D;&#x6DFB;&#x52A0;&#x8282;&#x70B9;</h2>
 <p>./bin/ca-server addNode --Net testnet --Addr TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY --Admin TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
 ./bin/ca-server addNode --Net testnet --Addr SmJG3rH2ZzYQ9ojxhbRCPwFiE9y6pD1Co --Admin TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
 ./bin/ca-server addNode --Net testnet --Addr iYjtLcW6SVCiousAb5DFKWtWroahhEj4u --Admin TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY</p>
-<h1 id="&#x8FD9;&#x91CC;addr-&#x4E00;&#x5B9A;&#x662F;&#x7F51;&#x7EDC;&#x4E2D;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4E0B;&#x7684;-datakeysaddress-&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5426;&#x5219;&#x62C9;&#x4E0D;&#x5230;&#x8BC1;&#x4E66;&#x3002;">&#x8FD9;&#x91CC;Addr &#x4E00;&#x5B9A;&#x662F;&#x7F51;&#x7EDC;&#x4E2D;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4E0B;&#x7684; data/keys/address &#x7684;&#x5730;&#x5740;&#xFF0C;&#x5426;&#x5219;&#x62C9;&#x4E0D;&#x5230;&#x8BC1;&#x4E66;&#x3002;</h1>
-<h1 id="&#x542F;&#x52A8;ca">&#x542F;&#x52A8;ca</h1>
+<h2 id="&#x8FD9;&#x91CC;addr-&#x4E00;&#x5B9A;&#x662F;&#x7F51;&#x7EDC;&#x4E2D;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4E0B;&#x7684;-datakeysaddress-&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5426;&#x5219;&#x62C9;&#x4E0D;&#x5230;&#x8BC1;&#x4E66;&#x3002;">&#x8FD9;&#x91CC;Addr &#x4E00;&#x5B9A;&#x662F;&#x7F51;&#x7EDC;&#x4E2D;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4E0B;&#x7684; data/keys/address &#x7684;&#x5730;&#x5740;&#xFF0C;&#x5426;&#x5219;&#x62C9;&#x4E0D;&#x5230;&#x8BC1;&#x4E66;&#x3002;</h2>
+<h2 id="&#x542F;&#x52A8;ca">&#x542F;&#x52A8;ca</h2>
 <p>nohup ./bin/ca-server &amp;</p>
 <pre><code>
-&#x4F7F;&#x7528; ``` bash runCa.sh ``` &#x8FD0;&#x884C;ca&#x670D;&#x52A1;&#x3002;
+&#x4F7F;&#x7528; bash runCa.sh &#x8FD0;&#x884C;ca&#x670D;&#x52A1;&#x3002;
 
 ###  1.3 &#x4FEE;&#x6539;xfront&#x914D;&#x7F6E;
 
 &#x5207;&#x6362;&#x5230;xchain&#x7684;testnest&#x76EE;&#x5F55;&#x603B;&#xFF0C;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x9700;&#x8981;&#x4FEE;&#x6539;xfront.yaml, network.yaml&#x6587;&#x4EF6;&#x3002;&#x4EE5;&#x8282;&#x70B9;1&#x4E3A;&#x4F8B;&#x5B50;&#xFF08;&#x4FEE;&#x6539;&#x6548;&#x679C;&#x53C2;&#x8003;1.4&#x8282;&#xFF09;&#xFF1A;
 
 1. &#x4FEE;&#x6539;xfront.yaml&#x914D;&#x7F6E;
-</code></pre><h1 id="xchain&#x5730;&#x5740;&#x914D;&#x7F6E;">xchain&#x5730;&#x5740;&#x914D;&#x7F6E;</h1>
-<p>xchainServer:</p>
-<h1 id="&#x5BF9;&#x5E94;-xchain-&#x7684;&#x8282;&#x70B9;-rpc-&#x7AEF;&#x53E3;&#xFF0C;&#x6BCF;&#x4E2A;-xchain-&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#xFF0C;&#x5728;-xchain-&#x7684;-serveryaml-&#x6587;&#x4EF6;&#x4E2D;&#x3002;">&#x5BF9;&#x5E94; xchain &#x7684;&#x8282;&#x70B9; rpc &#x7AEF;&#x53E3;&#xFF0C;&#x6BCF;&#x4E2A; xchain &#x8282;&#x70B9;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#xFF0C;&#x5728; xchain &#x7684; server.yaml &#x6587;&#x4EF6;&#x4E2D;&#x3002;</h1>
-<p>rpc: :37101</p>
-<h1 id="xchain-tls&#x7684;&#x5730;&#x5740;&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;&#x6307;&#x5411;p2p&#x7AEF;&#x53E3;">xchain tls&#x7684;&#x5730;&#x5740;,&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;(&#x6307;&#x5411;P2P&#x7AEF;&#x53E3;)</h1>
-<p>host: 127.0.0.1:47101</p>
-<h1 id="front-&#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;">front &#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</h1>
-<p>port: :57101</p>
-<h1 id="front&#x8BC1;&#x4E66;&#x5730;&#x5740;">front&#x8BC1;&#x4E66;&#x5730;&#x5740;</h1>
-<p>tlsPath: ./data/cert
-master: xuper</p>
-<h1 id="&#x82E5;&#x9700;&#x8981;&#x5F00;&#x542F;pprof&#xFF0C;&#x8BF7;&#x586B;&#x5199;http&#x5730;&#x5740;">&#x82E5;&#x9700;&#x8981;&#x5F00;&#x542F;pprof&#xFF0C;&#x8BF7;&#x586B;&#x5199;http&#x5730;&#x5740;</h1>
-<h1 id="http-1270015001">http: 127.0.0.1:5001</h1>
-<h1 id="&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;-datadbcadb">&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E; ./data/db/ca.db</h1>
-<p>dbConfig:
-dbType: sqlite3</p>
-<h1 id="dbtype-mysql">dbType: mysql</h1>
-<p>dbPath: ./data/db/ca.db
+``` yaml
+#xchain&#x5730;&#x5740;&#x914D;&#x7F6E;
+xchainServer:
+#&#x5BF9;&#x5E94; xchain &#x7684;&#x8282;&#x70B9; rpc &#x7AEF;&#x53E3;&#xFF0C;&#x6BCF;&#x4E2A; xchain &#x8282;&#x70B9;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#xFF0C;&#x5728; xchain &#x7684; server.yaml &#x6587;&#x4EF6;&#x4E2D;&#x3002;
+rpc: :37101
+#xchain tls&#x7684;&#x5730;&#x5740;,&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;(&#x6307;&#x5411;P2P&#x7AEF;&#x53E3;)
+host: 127.0.0.1:47101
+#front &#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;
+port: :57101
+ front&#x8BC1;&#x4E66;&#x5730;&#x5740;
+tlsPath: ./data/cert
+master: xuper
+#&#x82E5;&#x9700;&#x8981;&#x5F00;&#x542F;pprof&#xFF0C;&#x8BF7;&#x586B;&#x5199;http&#x5730;&#x5740;
+#http: 127.0.0.1:5001
+
+#&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E; ./data/db/ca.db
+dbConfig:
+dbType: sqlite3
+#dbType: mysql
+dbPath: ./data/db/ca.db
 mysqlDbUser: root
 mysqlDbPwd: 123456
 mysqlDbHost: 127.0.0.1
 mysqlDbPort: 3306
-mysqlDbDatabase: front_db</p>
-<h1 id="ca&#x5730;&#x5740;">CA&#x5730;&#x5740;</h1>
-<p>caConfig:</p>
-<h1 id="&#x8FDC;&#x7A0B;ca&#x5F00;&#x5173;-&#x8054;&#x76DF;&#x7F51;&#x7EDC;true&#x516C;&#x5F00;&#x7F51;&#x7EDC;false--&#x9ED8;&#x8BA4;true">&#x8FDC;&#x7A0B;ca&#x5F00;&#x5173;, &#x8054;&#x76DF;&#x7F51;&#x7EDC;true/&#x516C;&#x5F00;&#x7F51;&#x7EDC;false,  &#x9ED8;&#x8BA4;true</h1>
-<p>caSwitch: true</p>
-<h1 id="&#x8FDC;&#x7A0B;ca&#x5730;&#x5740;">&#x8FDC;&#x7A0B;ca&#x5730;&#x5740;</h1>
-<p>host: 127.0.0.1:8098</p>
-<h1 id="&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;&#x6B64;&#x5904;&#x914D;&#x7F6E;&#x5F88;&#x5173;&#x952E;&#x3002;">&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;&#x6B64;&#x5904;&#x914D;&#x7F6E;&#x5F88;&#x5173;&#x952E;&#x3002;</h1>
-<p>netName: testnet</p>
-<pre><code>
-2. &#x4FEE;&#x6539;network.yaml &#x914D;&#x7F6E;
-</code></pre><h1 id="p2p-network-config">p2p network config</h1>
+mysqlDbDatabase: front_db
+
+#CA&#x5730;&#x5740;
+caConfig:
+#&#x8FDC;&#x7A0B;ca&#x5F00;&#x5173;, &#x8054;&#x76DF;&#x7F51;&#x7EDC;true/&#x516C;&#x5F00;&#x7F51;&#x7EDC;false,  &#x9ED8;&#x8BA4;true
+caSwitch: true
+#&#x8FDC;&#x7A0B;ca&#x5730;&#x5740;
+host: 127.0.0.1:8098
+
+#&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;&#x6B64;&#x5904;&#x914D;&#x7F6E;&#x5F88;&#x5173;&#x952E;&#x3002;
+netName: testnet
+</code></pre><ol>
+<li>&#x4FEE;&#x6539;network.yaml &#x914D;&#x7F6E;
+``` yaml<h1 id="p2p-network-config">p2p network config</h1>
+</li>
+</ol>
 <h1 id="module-is-the-name-of-p2p-module-pluginp2pv1--p2pv2">Module is the name of p2p module plugin.(p2pv1 | p2pv2)</h1>
 <p>module: p2pv1</p>
 <h1 id="port-the-p2p-network-listened">Port the p2p network listened</h1>
@@ -635,33 +642,27 @@ xuper: # &#x8FD9;&#x91CC;&#x5C31;&#x662F; xfront &#x7AEF;&#x53E3;&#x914D;&#x7F6E
 <pre><code>- &quot;127.0.0.1:57101&quot;
 </code></pre><h1 id="bootnodes-config-the-bootnodes-the-node-to-connect">BootNodes config the bootNodes the node to connect</h1>
 <h1 id="bootnodes">bootNodes:</h1>
-<h1 id="-ip4127001tcp47101p2pqmf2hehe4sspgkfrctq6257vm3uhzvh2teqjhhvhzzufw6">- &quot;/ip4/127.0.0.1/tcp/47101/p2p/Qmf2HeHe4sspGkfRCTq6257Vm3UHzvh2TeQJHHvHzzuFw6&quot;</h1>
-<h1 id="-ip4127001tcp47102p2pqmqkp8plwsgv4jigjuulkv1jsdpxutndeump8sgaaubwvl">- &quot;/ip4/127.0.0.1/tcp/47102/p2p/QmQKp8pLWSgV4JiGjuULKV1JsdpxUtnDEUMP8sGaaUbwVL&quot;</h1>
-<h1 id="-ip4127001tcp47103p2pqmzxjzibcl5hy2ttv5cnaqnssvncbpegbzqk7sanl69r1e">- &quot;/ip4/127.0.0.1/tcp/47103/p2p/QmZXjZibcL5hy2Ttv5CnAQnssvnCbPEGBzqk7sAnL69R1E&quot;</h1>
 <h1 id="service-name">service name</h1>
 <p>serviceName: testnet</p>
 <pre><code>
 3. &#x542F;&#x52A8;&#x8282;&#x70B9;&#xFF0C;&#x9700;&#x8981;&#x5206;&#x522B;&#x542F;&#x52A8; node1&#x3001;node2&#x3001;node3 &#x7684; xfront&#x3002;&#xFF08;1.4&#x3001;1.5&#x63D0;&#x4F9B;&#x811A;&#x672C;&#xFF09;
-</code></pre><p>nohup ./bin/front &amp;</p>
-<h1 id="xfront-&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x4F1A;&#x751F;&#x6210;-cert-&#x76EE;&#x5F55;&#xFF0C;&#x5C06;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x5230;-netkeys-&#x76EE;&#x5F55;&#x4E0B;&#x3002;">xfront &#x542F;&#x52A8;&#x540E;&#xFF0C;&#x4F1A;&#x751F;&#x6210; cert &#x76EE;&#x5F55;&#xFF0C;&#x5C06;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x5230; netkeys &#x76EE;&#x5F55;&#x4E0B;&#x3002;</h1>
-<p>cd data
-cp cert/* netkeys/</p>
-<pre><code>
-### 1.4 &#x90E8;&#x7F72;&#x73AF;&#x5883;&#x51C6;&#x5907;
-
-1. node1&#x7684;front.yaml, network.yaml
-
-   front.yaml
-</code></pre><h1 id="xchain&#x5730;&#x5740;&#x914D;&#x7F6E;">xchain&#x5730;&#x5740;&#x914D;&#x7F6E;</h1>
-<p>xchainServer:
-  rpc: :37101</p>
-<h1 id="xchain-tls&#x7684;&#x5730;&#x5740;&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;">xchain tls&#x7684;&#x5730;&#x5740;,&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;</h1>
-<p>  host: 127.0.0.1:47101</p>
-<h1 id="front-&#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;">front &#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</h1>
-<p>  port: :57101</p>
-<h1 id="front&#x8BC1;&#x4E66;&#x5730;&#x5740;">front&#x8BC1;&#x4E66;&#x5730;&#x5740;</h1>
-<p>  tlsPath: ./data/cert
-  master: xuper</p>
+``` bash
+nohup ./bin/front &amp;
+#xfront &#x542F;&#x52A8;&#x540E;&#xFF0C;&#x4F1A;&#x751F;&#x6210; cert &#x76EE;&#x5F55;&#xFF0C;&#x5C06;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x5230; netkeys &#x76EE;&#x5F55;&#x4E0B;&#x3002;
+cd data
+cp cert/* netkeys/
+</code></pre><h3 id="14-&#x90E8;&#x7F72;&#x73AF;&#x5883;&#x51C6;&#x5907;">1.4 &#x90E8;&#x7F72;&#x73AF;&#x5883;&#x51C6;&#x5907;</h3>
+<ol>
+<li>node1&#x7684;front.yaml, network.yaml
+front.yaml
+``` yaml<h1 id="xchain&#x5730;&#x5740;&#x914D;&#x7F6E;">xchain&#x5730;&#x5740;&#x914D;&#x7F6E;</h1>
+xchainServer:
+rpc: :37101<h1 id="xchain-tls&#x7684;&#x5730;&#x5740;&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;">xchain tls&#x7684;&#x5730;&#x5740;,&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;</h1>
+host: 127.0.0.1:47101<h1 id="front-&#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;">front &#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</h1>
+port: :57101<h1 id="front&#x8BC1;&#x4E66;&#x5730;&#x5740;">front&#x8BC1;&#x4E66;&#x5730;&#x5740;</h1>
+tlsPath: ./data/cert
+master: xuper</li>
+</ol>
 <h1 id="&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;-datadbcadb">&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E; ./data/db/ca.db</h1>
 <p>dbConfig:
   dbType: sqlite3</p>
@@ -687,39 +688,39 @@ cp cert/* netkeys/</p>
 <h1 id="&#x8282;&#x70B9;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#x5730;&#x5740;">&#x8282;&#x70B9;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#x5730;&#x5740;</h1>
 <p>keys: ./data/keys</p>
 <pre><code>network.yaml
-</code></pre><h1 id="p2p-network-config">p2p network config</h1>
-<h1 id="module-is-the-name-of-p2p-module-pluginp2pv1--p2pv2">Module is the name of p2p module plugin.(p2pv1 | p2pv2)</h1>
-<p>module: p2pv1</p>
-<h1 id="port-the-p2p-network-listened">Port the p2p network listened</h1>
-<p>port: 47101</p>
-<h1 id="address-multiaddr-string">Address multiaddr string</h1>
-<p>address: /ip4/127.0.0.1/tcp/47101</p>
-<h1 id="istls-config-the-node-use-tls-secure-transparent">IsTls config the node use tls secure transparent</h1>
-<p>isTls: true</p>
-<h1 id="keypath-is-the-netdisk-private-key-path">KeyPath is the netdisk private key path</h1>
-<p>keyPath: netkeys</p>
-<h1 id="bootnodes-config-the-bootnodes-the-node-to-connect">BootNodes config the bootNodes the node to connect</h1>
-<h1 id="bootnodes">bootNodes:</h1>
-<h1 id="-ip4127001tcp47101p2pqmf2hehe4sspgkfrctq6257vm3uhzvh2teqjhhvhzzufw6">- &quot;/ip4/127.0.0.1/tcp/47101/p2p/Qmf2HeHe4sspGkfRCTq6257Vm3UHzvh2TeQJHHvHzzuFw6&quot;</h1>
-<h1 id="-ip4127001tcp47102p2pqmqkp8plwsgv4jigjuulkv1jsdpxutndeump8sgaaubwvl">- &quot;/ip4/127.0.0.1/tcp/47102/p2p/QmQKp8pLWSgV4JiGjuULKV1JsdpxUtnDEUMP8sGaaUbwVL&quot;</h1>
-<h1 id="-ip4127001tcp47103p2pqmzxjzibcl5hy2ttv5cnaqnssvncbpegbzqk7sanl69r1e">- &quot;/ip4/127.0.0.1/tcp/47103/p2p/QmZXjZibcL5hy2Ttv5CnAQnssvnCbPEGBzqk7sAnL69R1E&quot;</h1>
-<p>staticNodes:
-  xuper:</p>
-<pre><code>  - &quot;127.0.0.1:57101&quot;
-  - &quot;127.0.0.1:57102&quot;
-  - &quot;127.0.0.1:57103&quot;
-</code></pre><h1 id="service-name">service name</h1>
-<p>serviceName: testnet</p>
-<pre><code>
-2. node2&#x7684;front.yaml, network.yaml
-</code></pre><p>&#x53C2;&#x8003;node1&#x4FEE;&#x6539;&#x5BF9;&#x5E94;&#x7AEF;&#x53E3;&#x53F7;</p>
-<pre><code>3. node3&#x7684;front.yaml, network.yaml
-</code></pre><p>&#x53C2;&#x8003;node1&#x4FEE;&#x6539;&#x5BF9;&#x5E94;&#x7AEF;&#x53E3;&#x53F7;</p>
-<pre><code>4. caserver.yaml
-</code></pre><h1 id="&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;-&#x76EE;&#x524D;&#x4EC5;&#x652F;&#x6301;sqlite3">&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;, &#x76EE;&#x524D;&#x4EC5;&#x652F;&#x6301;sqlite3</h1>
-<p>dbConfig:
-  dbType: sqlite3
-  dbPath: ./ca.db</p>
+``` yaml
+#p2p network config
+
+#Module is the name of p2p module plugin.(p2pv1 | p2pv2)
+module: p2pv1
+#Port the p2p network listened
+port: 47101
+#Address multiaddr string
+address: /ip4/127.0.0.1/tcp/47101
+#IsTls config the node use tls secure transparent
+isTls: true
+#KeyPath is the netdisk private key path
+keyPath: netkeys
+#BootNodes config the bootNodes the node to connect
+#bootNodes:
+staticNodes:
+  xuper:
+      - &quot;127.0.0.1:57101&quot;
+      - &quot;127.0.0.1:57102&quot;
+      - &quot;127.0.0.1:57103&quot;
+#service name
+serviceName: testnet
+</code></pre><ol>
+<li>node2&#x7684;front.yaml, network.yaml
+&#x53C2;&#x8003;node1&#x4FEE;&#x6539;&#x5BF9;&#x5E94;&#x7AEF;&#x53E3;&#x53F7;</li>
+<li>node3&#x7684;front.yaml, network.yaml
+&#x53C2;&#x8003;node1&#x4FEE;&#x6539;&#x5BF9;&#x5E94;&#x7AEF;&#x53E3;&#x53F7;</li>
+<li>caserver.yaml
+``` yaml<h1 id="&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;-&#x76EE;&#x524D;&#x4EC5;&#x652F;&#x6301;sqlite3">&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;, &#x76EE;&#x524D;&#x4EC5;&#x652F;&#x6301;sqlite3</h1>
+dbConfig:
+dbType: sqlite3
+dbPath: ./ca.db</li>
+</ol>
 <h1 id="ca&#x5BF9;&#x5916;grpc&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#x53F7;">ca&#x5BF9;&#x5916;grpc&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#x53F7;</h1>
 <p>port: :8098</p>
 <h1 id="ca&#x5BF9;&#x5916;httpport&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#x53F7;">ca&#x5BF9;&#x5916;httpPort&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#x53F7;</h1>
@@ -747,87 +748,81 @@ cp cert/* netkeys/</p>
  |- caserver.yaml</p>
 <pre><code>
 ### 1.5 &#x90E8;&#x7F72;&#x811A;&#x672C;
-
 &#x811A;&#x672C;&#x5728;xchain&#x76EE;&#x5F55;&#x4E0B;&#x8FD0;&#x884C;
-
-1. runCa.sh
-</code></pre><h1 id="&#x542F;&#x52A8;ca&#x670D;&#x52A1;">&#x542F;&#x52A8;ca&#x670D;&#x52A1;</h1>
-<p>pkill ca-server
+1. runCa.sh 
+``` bash
+#&#x542F;&#x52A8;ca&#x670D;&#x52A1;
+pkill ca-server
 cd $GOPATH/src/xuper-ca
 rm -rf output
-make</p>
-<h1 id="&#x62F7;&#x8D1D;ca&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x62F7;&#x8D1D;ca&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h1>
-<p>rm output/caserver/conf/caserver.yaml
+make
+#&#x62F7;&#x8D1D;ca&#x914D;&#x7F6E;&#x6587;&#x4EF6;
+rm output/caserver/conf/caserver.yaml
 cp $GOPATH/src/xuperchain/league_conf/caserver.yaml ./output/caserver/conf/
-cd output/caserver</p>
-<h1 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h1>
-<p>./bin/ca-server init</p>
-<h1 id="&#x6DFB;&#x52A0;&#x7F51;&#x7EDC;">&#x6DFB;&#x52A0;&#x7F51;&#x7EDC;</h1>
-<p>./bin/ca-server addNet --Net testnet --Addr TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY</p>
-<h1 id="net-&#x4E3A;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;addr-&#x4E3A;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x5730;&#x5740;">Net &#x4E3A;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;Addr &#x4E3A;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x5730;&#x5740;</h1>
-<h1 id="&#x7F51;&#x7EDC;&#x4E2D;&#x6DFB;&#x52A0;&#x8282;&#x70B9;">&#x7F51;&#x7EDC;&#x4E2D;&#x6DFB;&#x52A0;&#x8282;&#x70B9;</h1>
-<p>./bin/ca-server addNode --Net testnet --Addr TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY --Admin TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
+cd output/caserver
+#&#x521D;&#x59CB;&#x5316;
+./bin/ca-server init
+#&#x6DFB;&#x52A0;&#x7F51;&#x7EDC;
+./bin/ca-server addNet --Net testnet --Addr TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
+#Net &#x4E3A;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#xFF0C;Addr &#x4E3A;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x5730;&#x5740;
+
+#&#x7F51;&#x7EDC;&#x4E2D;&#x6DFB;&#x52A0;&#x8282;&#x70B9;
+./bin/ca-server addNode --Net testnet --Addr TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY --Admin TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
 ./bin/ca-server addNode --Net testnet --Addr SmJG3rH2ZzYQ9ojxhbRCPwFiE9y6pD1Co --Admin TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
-./bin/ca-server addNode --Net testnet --Addr iYjtLcW6SVCiousAb5DFKWtWroahhEj4u --Admin TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY</p>
-<h1 id="&#x8FD9;&#x91CC;addr-&#x4E00;&#x5B9A;&#x662F;&#x7F51;&#x7EDC;&#x4E2D;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4E0B;&#x7684;-datakeysaddress-&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5426;&#x5219;&#x62C9;&#x4E0D;&#x5230;&#x8BC1;&#x4E66;&#x3002;">&#x8FD9;&#x91CC;Addr &#x4E00;&#x5B9A;&#x662F;&#x7F51;&#x7EDC;&#x4E2D;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4E0B;&#x7684; data/keys/address &#x7684;&#x5730;&#x5740;&#xFF0C;&#x5426;&#x5219;&#x62C9;&#x4E0D;&#x5230;&#x8BC1;&#x4E66;&#x3002;</h1>
-<h1 id="&#x542F;&#x52A8;ca">&#x542F;&#x52A8;ca</h1>
-<p>nohup ./bin/ca-server &amp;</p>
-<pre><code>
-2. runLeague.sh
-</code></pre><h1 id="&#x8054;&#x76DF;&#x94FE;&#x90E8;&#x7F72;&#x811A;&#x672C;">&#x8054;&#x76DF;&#x94FE;&#x90E8;&#x7F72;&#x811A;&#x672C;</h1>
-<p>pkill xchain
+./bin/ca-server addNode --Net testnet --Addr iYjtLcW6SVCiousAb5DFKWtWroahhEj4u --Admin TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
+#&#x8FD9;&#x91CC;Addr &#x4E00;&#x5B9A;&#x662F;&#x7F51;&#x7EDC;&#x4E2D;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4E0B;&#x7684; data/keys/address &#x7684;&#x5730;&#x5740;&#xFF0C;&#x5426;&#x5219;&#x62C9;&#x4E0D;&#x5230;&#x8BC1;&#x4E66;&#x3002;
+
+#&#x542F;&#x52A8;ca
+nohup ./bin/ca-server &amp;
+</code></pre><ol>
+<li>runLeague.sh
+``` bash<h1 id="&#x8054;&#x76DF;&#x94FE;&#x90E8;&#x7F72;&#x811A;&#x672C;">&#x8054;&#x76DF;&#x94FE;&#x90E8;&#x7F72;&#x811A;&#x672C;</h1>
+pkill xchain
 pkill front
 rm -rf output
 rm -rf testnet
 make
-make testnet</p>
-<h1 id="&#x7F16;&#x8BD1;xfront">&#x7F16;&#x8BD1;xfront</h1>
-<p>cd ../xuper-front</p>
-<h1 id="rm--rf-output">rm -rf output</h1>
+make testnet<h1 id="&#x7F16;&#x8BD1;xfront">&#x7F16;&#x8BD1;xfront</h1>
+cd ../xuper-front<h1 id="rm--rf-output">rm -rf output</h1>
 <h1 id="make">make</h1>
 <h1 id="&#x590D;&#x5236;front&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;">&#x590D;&#x5236;front&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</h1>
-<p>cp output/front/bin/front ../xuperchain/testnet/node1/bin
+cp output/front/bin/front ../xuperchain/testnet/node1/bin
 cp output/front/bin/front ../xuperchain/testnet/node2/bin
-cp output/front/bin/front ../xuperchain/testnet/node3/bin</p>
-<h1 id="&#x590D;&#x5236;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x590D;&#x5236;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h1>
-<p>cd ../xuperchain
+cp output/front/bin/front ../xuperchain/testnet/node3/bin<h1 id="&#x590D;&#x5236;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x590D;&#x5236;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h1>
+cd ../xuperchain
 rm testnet/node1/conf/network.yaml
 rm testnet/node2/conf/network.yaml
 rm testnet/node3/conf/network.yaml
 cp league_conf/node1/<em> testnet/node1/conf
 cp league_conf/node2/</em> testnet/node2/conf
-cp league_conf/node3/* testnet/node3/conf</p>
-<h2 id="&#x542F;&#x52A8;front">&#x542F;&#x52A8;front</h2>
-<p>echo &quot;start front&quot;</p>
-<h3 id="fornt1">fornt1</h3>
-<p>cd testnet/node1
+cp league_conf/node3/* testnet/node3/conf<h2 id="&#x542F;&#x52A8;front">&#x542F;&#x52A8;front</h2>
+echo &quot;start front&quot;<h3 id="fornt1">fornt1</h3>
+cd testnet/node1
 mkdir data/db/ logs
 nohup ./bin/front &gt; front1.log 2&gt;&amp;1 &amp;
 sleep 1
 cd data/
-cp cert/* netkeys/</p>
-<h3 id="front2">front2</h3>
-<p>cd ../../node2
+cp cert/* netkeys/<h3 id="front2">front2</h3>
+cd ../../node2
 mkdir data/db/ logs
 nohup ./bin/front &gt; front2.log 2&gt;&amp;1 &amp;
 sleep 1
 cd data/
-cp cert/* netkeys/</p>
-<h3 id="front3">front3</h3>
-<p>cd ../../node3
+cp cert/* netkeys/<h3 id="front3">front3</h3>
+cd ../../node3
 mkdir data/db/ logs
 nohup ./bin/front &gt; fornt2.log 2&gt;&amp;1 &amp;
 sleep 1
 cd data/
-cp cert/* netkeys/</p>
-<h1 id="&#x542F;&#x52A8;xchain">&#x542F;&#x52A8;xchain</h1>
-<p>echo &quot;start xchain&quot;
+cp cert/* netkeys/<h1 id="&#x542F;&#x52A8;xchain">&#x542F;&#x52A8;xchain</h1>
+echo &quot;start xchain&quot;
 cd ../../node1
 bash control.sh start
 cd ../node2
 bash control.sh start
 cd ../node3
-bash control.sh start</p>
+bash control.sh start</li>
+</ol>
 <pre><code>
 ###  1.6 CA&#x4F7F;&#x7528;&#x64CD;&#x4F5C;
 
@@ -865,129 +860,133 @@ bash control.sh start</p>
 
 #### 1.8.1 &#x65B0;&#x5EFA;&#x8282;&#x70B9;
 &#x64CD;&#x4F5C;&#x76EE;&#x5F55;&#x662F;&#x5728;testnet&#x4E0B;
-</code></pre><p>cp node1 node4 -R</p>
-<h1 id="&#x5220;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x76EE;&#x5F55;">&#x5220;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x76EE;&#x5F55;</h1>
-<p>rm -rf logs tmp data/cert data/netkeys data/blockchain data/db data/keys</p>
-<h1 id="&#x751F;&#x6210;&#x65B0;&#x7684;&#x8282;&#x70B9;&#x5730;&#x5740;">&#x751F;&#x6210;&#x65B0;&#x7684;&#x8282;&#x70B9;&#x5730;&#x5740;</h1>
-<p>./bin/xchain-cli account newkeys</p>
-<pre><code>
-#### 1.8.2 &#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6; 
 
-  &#x9700;&#x8981;&#x4FEE;&#x6539;&#x7684;network.yaml,  server.yaml,  front.yaml &#xFF08;&#x6CE8;&#x610F;&#x76F8;&#x5173;&#x7AEF;&#x53E3;&#x8BBE;&#x7F6E;&#x6B63;&#x786E;&#xFF09;
-  network.yaml
-</code></pre><h1 id="p2p-network-config">p2p network config</h1>
-<h1 id="module-is-the-name-of-p2p-module-pluginp2pv1--p2pv2">Module is the name of p2p module plugin.(p2pv1 | p2pv2)</h1>
-<p>module: p2pv1</p>
-<h1 id="port-the-p2p-network-listened">Port the p2p network listened</h1>
-<p>port: 47104</p>
-<h1 id="address-multiaddr-string">Address multiaddr string</h1>
-<p>address: /ip4/127.0.0.1/tcp/47104</p>
-<h1 id="istls-config-the-node-use-tls-secure-transparent">IsTls config the node use tls secure transparent</h1>
-<p>isTls: true</p>
-<h1 id="keypath-is-the-netdisk-private-key-path">KeyPath is the netdisk private key path</h1>
-<p>keyPath: netkeys</p>
-<h1 id="bootnodes-config-the-bootnodes-the-node-to-connect">BootNodes config the bootNodes the node to connect</h1>
-<h1 id="bootnodes">bootNodes:</h1>
-<h1 id="-ip4127001tcp47101p2pqmf2hehe4sspgkfrctq6257vm3uhzvh2teqjhhvhzzufw6">- &quot;/ip4/127.0.0.1/tcp/47101/p2p/Qmf2HeHe4sspGkfRCTq6257Vm3UHzvh2TeQJHHvHzzuFw6&quot;</h1>
-<h1 id="-ip4127001tcp47102p2pqmqkp8plwsgv4jigjuulkv1jsdpxutndeump8sgaaubwvl">- &quot;/ip4/127.0.0.1/tcp/47102/p2p/QmQKp8pLWSgV4JiGjuULKV1JsdpxUtnDEUMP8sGaaUbwVL&quot;</h1>
-<h1 id="-ip4127001tcp47103p2pqmzxjzibcl5hy2ttv5cnaqnssvncbpegbzqk7sanl69r1e">- &quot;/ip4/127.0.0.1/tcp/47103/p2p/QmZXjZibcL5hy2Ttv5CnAQnssvnCbPEGBzqk7sAnL69R1E&quot;</h1>
-<p>staticNodes:
-  xuper:</p>
-<pre><code>  - &quot;127.0.0.1:57101&quot;
-  - &quot;127.0.0.1:57102&quot;
-  - &quot;127.0.0.1:57103&quot;
-</code></pre><h1 id="service-name">service name</h1>
-<p>serviceName: testnet</p>
-<pre><code>server.yaml
-</code></pre><h1 id="rpc-service-listen-port">Rpc service listen port</h1>
-<p>rpcPort: 37104</p>
-<h1 id="gwport">GWPort</h1>
-<p>GWPort: 37304</p>
-<h1 id="metricport">MetricPort</h1>
-<p>metricPort: 37204</p>
-<h1 id="enableendorser">EnableEndorser</h1>
-<p>enableEndorser: true</p>
-<h2 id="endorserhosts">EndorserHosts</h2>
-<p>endorserHosts:</p>
+```bash 
+cp node1 node4 -R
+#&#x5220;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x76EE;&#x5F55;
+rm -rf logs tmp data/cert data/netkeys data/blockchain data/db data/keys
+#&#x751F;&#x6210;&#x65B0;&#x7684;&#x8282;&#x70B9;&#x5730;&#x5740;
+./bin/xchain-cli account newkeys
+</code></pre><h4 id="182-&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">1.8.2 &#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h4>
+<p>  &#x9700;&#x8981;&#x4FEE;&#x6539;&#x7684;network.yaml,  server.yaml,  front.yaml &#xFF08;&#x6CE8;&#x610F;&#x76F8;&#x5173;&#x7AEF;&#x53E3;&#x8BBE;&#x7F6E;&#x6B63;&#x786E;&#xFF09;
+  network.yaml</p>
+<pre><code class="lang-yaml"><span class="hljs-comment">#p2p network config</span>
+
+<span class="hljs-comment">#Module is the name of p2p module plugin.(p2pv1 | p2pv2)</span>
+<span class="hljs-attr">module:</span> p2pv1
+<span class="hljs-comment">#Port the p2p network listened</span>
+<span class="hljs-attr">port:</span> <span class="hljs-number">47104</span>
+<span class="hljs-comment">#Address multiaddr string</span>
+<span class="hljs-attr">address:</span> /ip4/<span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>/tcp/<span class="hljs-number">47104</span>
+<span class="hljs-comment">#IsTls config the node use tls secure transparent</span>
+<span class="hljs-attr">isTls:</span> <span class="hljs-literal">true</span>
+<span class="hljs-comment">#KeyPath is the netdisk private key path</span>
+<span class="hljs-attr">keyPath:</span> netkeys
+<span class="hljs-attr">staticNodes:</span>
+<span class="hljs-attr">  xuper:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">&quot;127.0.0.1:57101&quot;</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">&quot;127.0.0.1:57102&quot;</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">&quot;127.0.0.1:57103&quot;</span>
+<span class="hljs-comment">#service name</span>
+<span class="hljs-attr">serviceName:</span> testnet
+</code></pre>
+<p>server.yaml</p>
+<pre><code class="lang-yaml"><span class="hljs-comment">#Rpc service listen port</span>
+<span class="hljs-attr">rpcPort:</span> <span class="hljs-number">37104</span>
+<span class="hljs-comment">#GWPort</span>
+<span class="hljs-attr">GWPort:</span> <span class="hljs-number">37304</span>
+<span class="hljs-comment">#MetricPort</span>
+<span class="hljs-attr">metricPort:</span> <span class="hljs-number">37204</span>
+<span class="hljs-comment">#EnableEndorser</span>
+<span class="hljs-attr">enableEndorser:</span> <span class="hljs-literal">true</span>
+<span class="hljs-comment">##EndorserHosts</span>
+<span class="hljs-attr">endorserHosts:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">&quot;127.0.0.1:8848&quot;</span>
+<span class="hljs-attr">endorserModule:</span> <span class="hljs-string">&quot;default&quot;</span>
+<span class="hljs-comment">#Set the max message size in bytes the server can receive.</span>
+<span class="hljs-comment">#If this is not set, gRPC uses the default 4MB.</span>
+<span class="hljs-attr">maxRecvMsgSize:</span> <span class="hljs-number">134217728</span>
+<span class="hljs-comment">#readBufSize lets you set the size of read buffer, this determines how much data can be read at most for one read syscall. The default value for this buffer is 32KB. Zero will disable read buffer for a connection so data framer can access the underlying conn directly.</span>
+<span class="hljs-attr">readBufSize:</span> <span class="hljs-number">32768</span>
+<span class="hljs-comment">#writeBufSize determines how much data can be batched before doing a write on the wire. The corresponding memory allocation for this buffer will be twice the size to keep syscalls low. The default value for this buffer is 32KB. Zero will disable the write buffer such that each write will be on underlying connection. <span class="hljs-doctag">Note:</span> A Send call may not directly translate to a write.</span>
+<span class="hljs-attr">writeBufSize:</span> <span class="hljs-number">32768</span>
+<span class="hljs-comment">#Window size for stream</span>
+<span class="hljs-comment">#The lower bound for window size is 64K and any value smaller than that will be ignored</span>
+<span class="hljs-attr">initWindowSize:</span> <span class="hljs-number">131072</span>
+<span class="hljs-comment">#Window size for a connection</span>
+<span class="hljs-comment">#The lower bound for window size is 64K and any value smaller than that will be ignored</span>
+<span class="hljs-attr">initConnWindowSize:</span> <span class="hljs-number">65536</span>
+<span class="hljs-attr">adapterAllowCROS:</span> <span class="hljs-literal">true</span>
+</code></pre>
+<p>front.yaml</p>
+<pre><code class="lang-yaml"><span class="hljs-comment">#xchain&#x5730;&#x5740;&#x914D;&#x7F6E;</span>
+<span class="hljs-attr">xchainServer:</span>
+<span class="hljs-attr">  rpc:</span> :<span class="hljs-number">37104</span>
+  <span class="hljs-comment"># xchain tls&#x7684;&#x5730;&#x5740;,&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;</span>
+<span class="hljs-attr">  host:</span> <span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">47104</span>
+  <span class="hljs-comment"># front &#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</span>
+<span class="hljs-attr">  port:</span> :<span class="hljs-number">57104</span>
+  <span class="hljs-comment"># front&#x8BC1;&#x4E66;&#x5730;&#x5740;</span>
+<span class="hljs-attr">  tlsPath:</span> ./data/cert
+<span class="hljs-attr">  master:</span> xuper
+
+<span class="hljs-comment">#&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E; ./data/db/ca.db</span>
+<span class="hljs-attr">dbConfig:</span>
+<span class="hljs-attr">  dbType:</span> sqlite3
+  <span class="hljs-comment">#dbType: mysql</span>
+<span class="hljs-attr">  dbPath:</span> ./data/db/ca.db
+<span class="hljs-attr">  mysqlDbUser:</span> root
+<span class="hljs-attr">  mysqlDbPwd:</span> <span class="hljs-number">123456</span>
+<span class="hljs-attr">  mysqlDbHost:</span> <span class="hljs-number">10.99</span><span class="hljs-number">.196</span><span class="hljs-number">.224</span>
+<span class="hljs-attr">  mysqlDbPort:</span> <span class="hljs-number">3306</span>
+<span class="hljs-attr">  mysqlDbDatabase:</span> front_db
+
+<span class="hljs-comment">#CA&#x5730;&#x5740;</span>
+<span class="hljs-attr">caConfig:</span>
+  <span class="hljs-comment"># &#x8FDC;&#x7A0B;ca&#x5F00;&#x5173;, &#x8054;&#x76DF;&#x7F51;&#x7EDC;true/&#x516C;&#x5F00;&#x7F51;&#x7EDC;false,  &#x9ED8;&#x8BA4;true</span>
+<span class="hljs-attr">  caSwitch:</span> <span class="hljs-literal">true</span>
+  <span class="hljs-comment"># &#x8FDC;&#x7A0B;ca&#x5730;&#x5740;</span>
+<span class="hljs-attr">  host:</span> <span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span>:<span class="hljs-number">8098</span>
+
+<span class="hljs-comment">#&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x7F51;&#x7EDC;&#x540D;&#x79F0;</span>
+<span class="hljs-attr">netName:</span> testnet
+
+<span class="hljs-comment">#&#x65E5;&#x5FD7;</span>
+<span class="hljs-attr">log:</span>
+<span class="hljs-attr">  level:</span> info
+<span class="hljs-attr">  path:</span> ./logs
+
+<span class="hljs-comment">#&#x8282;&#x70B9;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#x5730;&#x5740;</span>
+<span class="hljs-attr">keys:</span> ./data/keys
+</code></pre>
+<h4 id="183-&#x542F;&#x52A8;xfront-xchain">1.8.3 &#x542F;&#x52A8;xfront, xchain</h4>
+<pre><code class="lang-bash"><span class="hljs-comment">#&#x73AF;&#x5883;&#x51C6;&#x5907;</span>
+mkdir logs data/db 
+<span class="hljs-comment">#&#x542F;&#x52A8;xfront</span>
+nohup ./bin/front &gt; front4.log 2&gt;&amp;1 &amp;
+cp data/cert/* data/netkeys/
+<span class="hljs-comment">#&#x542F;&#x52A8;xchain</span>
+bash control.sh start
+</code></pre>
+<h3 id="19-&#x5E73;&#x884C;&#x94FE;&#x4E0E;&#x7FA4;&#x7EC4;">1.9 &#x5E73;&#x884C;&#x94FE;&#x4E0E;&#x7FA4;&#x7EC4;</h3>
+<p>&#x8054;&#x76DF;&#x662F;&#x63A7;&#x5236;&#x8282;&#x70B9;&#x7684;&#x52A0;&#x5165;&#x548C;&#x9000;&#x51FA;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x8282;&#x70B9;&#x548C;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x72EC;&#x7ACB;&#x7684;&#x6570;&#x636E;&#x9694;&#x79BB;&#xFF0C;&#x8BBF;&#x95EE;&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;&#x5E73;&#x884C;&#x94FE;&#x548C;&#x7FA4;&#x7EC4;&#x529F;&#x80FD;&#x3002;&#x8054;&#x76DF;&#x4E4B;&#x5185;&#xFF0C;&#x8282;&#x70B9;&#x548C;&#x8282;&#x70B9;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x7FA4;&#x7EC4;&#x5B9E;&#x73B0;&#x9690;&#x79C1;&#x4FDD;&#x62A4;&#x3002;</p>
+<h4 id="191-&#x540D;&#x5B57;&#x89E3;&#x6790;">1.9.1 &#x540D;&#x5B57;&#x89E3;&#x6790;</h4>
 <ul>
-<li>&quot;127.0.0.1:8848&quot;
-endorserModule: &quot;default&quot;<h1 id="set-the-max-message-size-in-bytes-the-server-can-receive">Set the max message size in bytes the server can receive.</h1>
-<h1 id="if-this-is-not-set-grpc-uses-the-default-4mb">If this is not set, gRPC uses the default 4MB.</h1>
-maxRecvMsgSize: 134217728<h1 id="readbufsize-lets-you-set-the-size-of-read-buffer-this-determines-how-much-data-can-be-read-at-most-for-one-read-syscall-the-default-value-for-this-buffer-is-32kb-zero-will-disable-read-buffer-for-a-connection-so-data-framer-can-access-the-underlying-conn-directly">readBufSize lets you set the size of read buffer, this determines how much data can be read at most for one read syscall. The default value for this buffer is 32KB. Zero will disable read buffer for a connection so data framer can access the underlying conn directly.</h1>
-readBufSize: 32768<h1 id="writebufsize-determines-how-much-data-can-be-batched-before-doing-a-write-on-the-wire-the-corresponding-memory-allocation-for-this-buffer-will-be-twice-the-size-to-keep-syscalls-low-the-default-value-for-this-buffer-is-32kb-zero-will-disable-the-write-buffer-such-that-each-write-will-be-on-underlying-connection-note-a-send-call-may-not-directly-translate-to-a-write">writeBufSize determines how much data can be batched before doing a write on the wire. The corresponding memory allocation for this buffer will be twice the size to keep syscalls low. The default value for this buffer is 32KB. Zero will disable the write buffer such that each write will be on underlying connection. Note: A Send call may not directly translate to a write.</h1>
-writeBufSize: 32768<h1 id="window-size-for-stream">Window size for stream</h1>
-<h1 id="the-lower-bound-for-window-size-is-64k-and-any-value-smaller-than-that-will-be-ignored">The lower bound for window size is 64K and any value smaller than that will be ignored</h1>
-initWindowSize: 131072<h1 id="window-size-for-a-connection">Window size for a connection</h1>
-<h1 id="the-lower-bound-for-window-size-is-64k-and-any-value-smaller-than-that-will-be-ignored">The lower bound for window size is 64K and any value smaller than that will be ignored</h1>
-initConnWindowSize: 65536
-adapterAllowCROS: true<pre><code>front.yaml
-</code></pre><h1 id="xchain&#x5730;&#x5740;&#x914D;&#x7F6E;">xchain&#x5730;&#x5740;&#x914D;&#x7F6E;</h1>
-xchainServer:
-rpc: :37104<h1 id="xchain-tls&#x7684;&#x5730;&#x5740;&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;">xchain tls&#x7684;&#x5730;&#x5740;,&#x5982;&#x679C;&#x4E0D;&#x7528;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4E0D;&#x914D;&#x7F6E;</h1>
-host: 127.0.0.1:47104<h1 id="front-&#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;">front &#x4F5C;&#x4E3A;xchain&#x4EE3;&#x7406;&#x5BF9;&#x5176;&#x4ED6;xchain&#x670D;&#x52A1;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</h1>
-port: :57104<h1 id="front&#x8BC1;&#x4E66;&#x5730;&#x5740;">front&#x8BC1;&#x4E66;&#x5730;&#x5740;</h1>
-tlsPath: ./data/cert
-master: xuper</li>
+<li>&#x5E73;&#x884C;&#x94FE;&#xFF1A;&#x76F8;&#x5BF9;&#x4E8E;&#x4E3B;&#x94FE;&#x800C;&#x8A00;&#xFF0C;&#x8FD0;&#x884C;&#x5728; matrixchain&#x4E2D;&#x7684;&#x7528;&#x6237;&#x7EA7;&#x533A;&#x5757;&#x94FE;&#x5B9E;&#x4F8B;&#xFF0C;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x4E3B;&#x94FE;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x521B;&#x5EFA;&#x3002;&#x529F;&#x80FD;&#x4E0E;&#x4E3B;&#x94FE;&#x65E0;&#x533A;&#x522B;&#xFF0C;&#x5168;&#x7F51;&#x8282;&#x70B9;&#x5747;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5E73;&#x884C;&#x94FE;&#x8D26;&#x672C;&#x6570;&#x636E;&#xFF0C;&#x5B9E;&#x73B0;&#x6574;&#x4F53;&#x67B6;&#x6784;&#x6C34;&#x5E73;&#x53EF;&#x6269;&#x5C55;&#x3002;</li>
+<li>&#x7FA4;&#x7EC4;&#xFF1A;&#x4F5C;&#x7528;&#x4E8E;&#x5E73;&#x884C;&#x94FE;&#xFF0C;&#x5177;&#x5907;&#x7FA4;&#x7EC4;&#x7279;&#x6027;&#x7684;&#x5E73;&#x884C;&#x94FE;&#xFF0C;<strong>&#x53EA;&#x6709;&#x7279;&#x5B9A;&#x8282;&#x70B9;&#x624D;&#x62E5;&#x6709;&#x8BE5;&#x5E73;&#x884C;&#x94FE;&#x7684;&#x8D26;&#x672C;&#x6570;&#x636E;</strong>&#x3002;&#x7FA4;&#x7EC4;&#x5177;&#x5907;&#x7684;&#x7279;&#x6027;&#x5305;&#x62EC;&#x79C1;&#x5BC6;&#x6027;&#x3001;&#x52A8;&#x6001;&#x6027;&#x3002;&#x7FA4;&#x7EC4;&#x4E2D;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x5730;&#x5740;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x5171;&#x4EAB;&#x5E73;&#x884C;&#x94FE;&#x3002; &#x540C;&#x65F6;&#x7FA4;&#x7EC4;&#x6709; admin &#x6743;&#x9650;&#xFF0C;admin &#x53EF;&#x4EE5;&#x6709;&#x6743;&#x9650;&#x5411;&#x7FA4;&#x7EC4;&#x4E2D;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x6210;&#x5458;&#x3002;</li>
 </ul>
-<h1 id="&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;-datadbcadb">&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E; ./data/db/ca.db</h1>
-<p>dbConfig:
-  dbType: sqlite3</p>
-<h1 id="dbtype-mysql">dbType: mysql</h1>
-<p>  dbPath: ./data/db/ca.db
-  mysqlDbUser: root
-  mysqlDbPwd: 123456
-  mysqlDbHost: 10.99.196.224
-  mysqlDbPort: 3306
-  mysqlDbDatabase: front_db</p>
-<h1 id="ca&#x5730;&#x5740;">CA&#x5730;&#x5740;</h1>
-<p>caConfig:</p>
-<h1 id="&#x8FDC;&#x7A0B;ca&#x5F00;&#x5173;-&#x8054;&#x76DF;&#x7F51;&#x7EDC;true&#x516C;&#x5F00;&#x7F51;&#x7EDC;false--&#x9ED8;&#x8BA4;true">&#x8FDC;&#x7A0B;ca&#x5F00;&#x5173;, &#x8054;&#x76DF;&#x7F51;&#x7EDC;true/&#x516C;&#x5F00;&#x7F51;&#x7EDC;false,  &#x9ED8;&#x8BA4;true</h1>
-<p>  caSwitch: true</p>
-<h1 id="&#x8FDC;&#x7A0B;ca&#x5730;&#x5740;">&#x8FDC;&#x7A0B;ca&#x5730;&#x5740;</h1>
-<p>  host: 127.0.0.1:8098</p>
-<h1 id="&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x7F51;&#x7EDC;&#x540D;&#x79F0;">&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x7F51;&#x7EDC;&#x540D;&#x79F0;</h1>
-<p>netName: testnet</p>
-<h1 id="&#x65E5;&#x5FD7;">&#x65E5;&#x5FD7;</h1>
-<p>log:
-  level: info
-  path: ./logs</p>
-<h1 id="&#x8282;&#x70B9;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#x5730;&#x5740;">&#x8282;&#x70B9;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#x5730;&#x5740;</h1>
-<p>keys: ./data/keys</p>
-<pre><code>
-#### 1.8.3 &#x542F;&#x52A8;xfront, xchain
-</code></pre><h1 id="&#x73AF;&#x5883;&#x51C6;&#x5907;">&#x73AF;&#x5883;&#x51C6;&#x5907;</h1>
-<p>mkdir logs data/db </p>
-<h1 id="&#x542F;&#x52A8;xfront">&#x542F;&#x52A8;xfront</h1>
-<p>nohup ./bin/front &gt; front4.log 2&gt;&amp;1 &amp;
-cp data/cert/* data/netkeys/</p>
-<h1 id="&#x542F;&#x52A8;xchain">&#x542F;&#x52A8;xchain</h1>
-<p>bash control.sh start</p>
-<pre><code>
-### 1.9 &#x5E73;&#x884C;&#x94FE;&#x4E0E;&#x7FA4;&#x7EC4;
-
-&#x8054;&#x76DF;&#x662F;&#x63A7;&#x5236;&#x8282;&#x70B9;&#x7684;&#x52A0;&#x5165;&#x548C;&#x9000;&#x51FA;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x8282;&#x70B9;&#x548C;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x72EC;&#x7ACB;&#x7684;&#x6570;&#x636E;&#x9694;&#x79BB;&#xFF0C;&#x8BBF;&#x95EE;&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;&#x5E73;&#x884C;&#x94FE;&#x548C;&#x7FA4;&#x7EC4;&#x529F;&#x80FD;&#x3002;&#x8054;&#x76DF;&#x4E4B;&#x5185;&#xFF0C;&#x8282;&#x70B9;&#x548C;&#x8282;&#x70B9;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x7FA4;&#x7EC4;&#x5B9E;&#x73B0;&#x9690;&#x79C1;&#x4FDD;&#x62A4;&#x3002;
-
-#### 1.9.1 &#x540D;&#x5B57;&#x89E3;&#x6790;
-
-- &#x5E73;&#x884C;&#x94FE;&#xFF1A;&#x76F8;&#x5BF9;&#x4E8E;&#x4E3B;&#x94FE;&#x800C;&#x8A00;&#xFF0C;&#x8FD0;&#x884C;&#x5728; matrixchain&#x4E2D;&#x7684;&#x7528;&#x6237;&#x7EA7;&#x533A;&#x5757;&#x94FE;&#x5B9E;&#x4F8B;&#xFF0C;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x4E3B;&#x94FE;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x521B;&#x5EFA;&#x3002;&#x529F;&#x80FD;&#x4E0E;&#x4E3B;&#x94FE;&#x65E0;&#x533A;&#x522B;&#xFF0C;&#x5168;&#x7F51;&#x8282;&#x70B9;&#x5747;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5E73;&#x884C;&#x94FE;&#x8D26;&#x672C;&#x6570;&#x636E;&#xFF0C;&#x5B9E;&#x73B0;&#x6574;&#x4F53;&#x67B6;&#x6784;&#x6C34;&#x5E73;&#x53EF;&#x6269;&#x5C55;&#x3002;
-- &#x7FA4;&#x7EC4;&#xFF1A;&#x4F5C;&#x7528;&#x4E8E;&#x5E73;&#x884C;&#x94FE;&#xFF0C;&#x5177;&#x5907;&#x7FA4;&#x7EC4;&#x7279;&#x6027;&#x7684;&#x5E73;&#x884C;&#x94FE;&#xFF0C;**&#x53EA;&#x6709;&#x7279;&#x5B9A;&#x8282;&#x70B9;&#x624D;&#x62E5;&#x6709;&#x8BE5;&#x5E73;&#x884C;&#x94FE;&#x7684;&#x8D26;&#x672C;&#x6570;&#x636E;**&#x3002;&#x7FA4;&#x7EC4;&#x5177;&#x5907;&#x7684;&#x7279;&#x6027;&#x5305;&#x62EC;&#x79C1;&#x5BC6;&#x6027;&#x3001;&#x52A8;&#x6001;&#x6027;&#x3002;&#x7FA4;&#x7EC4;&#x4E2D;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x5730;&#x5740;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x5171;&#x4EAB;&#x5E73;&#x884C;&#x94FE;&#x3002; &#x540C;&#x65F6;&#x7FA4;&#x7EC4;&#x6709; admin &#x6743;&#x9650;&#xFF0C;admin &#x53EF;&#x4EE5;&#x6709;&#x6743;&#x9650;&#x5411;&#x7FA4;&#x7EC4;&#x4E2D;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x6210;&#x5458;&#x3002;
-
-####  1.9.2 &#x5E73;&#x884C;&#x94FE;&#x4F7F;&#x7528;&#x64CD;&#x4F5C;
-
-&#x5E73;&#x884C;&#x94FE;&#x7684;&#x7BA1;&#x7406;&#x662F;&#x901A;&#x8FC7;&#x7CFB;&#x7EDF;&#x5408;&#x7EA6;&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x7CFB;&#x7EDF;&#x5408;&#x7EA6;&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#xFF0C;&#x505C;&#x7528;&#x5E73;&#x884C;&#x94FE;&#x3002;&#x540C;&#x65F6;&#x5728;&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x7FA4;&#x7EC4;&#x3002;
-
-1. &#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#xFF0C;&#x4E0D;&#x8BBE;&#x7F6E;&#x7FA4;&#x7EC4;&#xFF1A;
-
-   &gt;
-</code></pre><blockquote>
-<p>./bin/xchain-cli xkernel invoke &apos;$parachain&apos; --method createChain \
+<h4 id="192-&#x5E73;&#x884C;&#x94FE;&#x4F7F;&#x7528;&#x64CD;&#x4F5C;">1.9.2 &#x5E73;&#x884C;&#x94FE;&#x4F7F;&#x7528;&#x64CD;&#x4F5C;</h4>
+<p>&#x5E73;&#x884C;&#x94FE;&#x7684;&#x7BA1;&#x7406;&#x662F;&#x901A;&#x8FC7;&#x7CFB;&#x7EDF;&#x5408;&#x7EA6;&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x7CFB;&#x7EDF;&#x5408;&#x7EA6;&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#xFF0C;&#x505C;&#x7528;&#x5E73;&#x884C;&#x94FE;&#x3002;&#x540C;&#x65F6;&#x5728;&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x7FA4;&#x7EC4;&#x3002;</p>
+<ol>
+<li><p>&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#xFF0C;&#x4E0D;&#x8BBE;&#x7F6E;&#x7FA4;&#x7EC4;&#xFF1A;</p>
+<blockquote>
+<pre><code>./bin/xchain-cli xkernel invoke &apos;$parachain&apos; --method createChain \
 -a &apos;{&quot;name&quot;: &quot;hello&quot;,&quot;data&quot;: &quot;{\&quot;version\&quot;:\&quot;1\&quot;,\&quot;predistribution\&quot;:[{\&quot;address\&quot;:\&quot;TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY\&quot;,\&quot;quota\&quot;:\&quot;100000000000000000000\&quot;}],\&quot;maxblocksize\&quot;:\&quot;128\&quot;,\&quot;award\&quot;:\&quot;1000000\&quot;,\&quot;decimals\&quot;:\&quot;8\&quot;,\&quot;award_decay\&quot;:{\&quot;height_gap\&quot;:31536000,\&quot;ratio\&quot;:1},\&quot;gas_price\&quot;:{\&quot;cpu_rate\&quot;:1000,\&quot;mem_rate\&quot;:1000000,\&quot;disk_rate\&quot;:1,\&quot;xfee_rate\&quot;:1},\&quot;new_account_resource_amount\&quot;:1000,\&quot;genesis_consensus\&quot;:{\&quot;name\&quot;:\&quot;single\&quot;,\&quot;config\&quot;:{\&quot;miner\&quot;:\&quot;TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY\&quot;,\&quot;period\&quot;:\&quot;3000\&quot;}}}&quot;}&apos; \
 --fee 1000
-```</p>
-<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#x662F;&#x8C03;&#x7528;&#x7CFB;&#x7EDF;&#x5408;&#x7EA6;&#xFF0C;&#x2013;method &#x8BF4;&#x660E;&#x8981;&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#xFF0C;-a &#x662F;&#x5E73;&#x884C;&#x94FE;&#x521B;&#x4E16;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5176;&#x4E2D;&#x7684; name &#x5B57;&#x6BB5;&#x662F;&#x94FE;&#x7684;&#x540D;&#x5B57;&#xFF0C;data &#x5B57;&#x6BB5;&#x548C; xchain &#x8282;&#x70B9;&#x7684;&#x521B;&#x4E16;&#x6587;&#x4EF6;&#xFF08;node1/data/genesis/xuper.json&#xFF09;&#x683C;&#x5F0F;&#x4E00;&#x81F4;&#x3002;</p>
+</code></pre><p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#x662F;&#x8C03;&#x7528;&#x7CFB;&#x7EDF;&#x5408;&#x7EA6;&#xFF0C;&#x2013;method &#x8BF4;&#x660E;&#x8981;&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#xFF0C;-a &#x662F;&#x5E73;&#x884C;&#x94FE;&#x521B;&#x4E16;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5176;&#x4E2D;&#x7684; name &#x5B57;&#x6BB5;&#x662F;&#x94FE;&#x7684;&#x540D;&#x5B57;&#xFF0C;data &#x5B57;&#x6BB5;&#x548C; xchain &#x8282;&#x70B9;&#x7684;&#x521B;&#x4E16;&#x6587;&#x4EF6;&#xFF08;node1/data/genesis/xuper.json&#xFF09;&#x683C;&#x5F0F;&#x4E00;&#x81F4;&#x3002;</p>
 <p>&#x6B64;&#x547D;&#x4EE4;&#x53EA;&#x662F;&#x521B;&#x5EFA;&#x4E86;&#x5E73;&#x884C;&#x94FE;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x663E;&#x793A;&#x8BF4;&#x660E;&#x521B;&#x5EFA;&#x7FA4;&#x7EC4;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x7FA4;&#x7EC4;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x770B;&#x4E0B;&#x5982;&#x679C;&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#x65F6;&#x5982;&#x4F55;&#x663E;&#x793A;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;&#x7FA4;&#x7EC4;:</p>
 </blockquote>
-<ol>
+</li>
 <li><p>&#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#xFF0C;&#x540C;&#x65F6;&#x8BBE;&#x7F6E;&#x7FA4;&#x7EC4;&#xFF1A;</p>
 <blockquote>
 <pre><code>./bin/xchain-cli xkernel invoke &apos;$parachain&apos; --method createChain \
@@ -1103,7 +1102,7 @@ cp data/cert/* data/netkeys/</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"联盟链","level":"1.3.7","depth":2,"next":{"title":"压测使用","level":"1.3.8","depth":2,"path":"advance-use/压测使用.md","ref":"advance-use/压测使用.md","articles":[]},"previous":{"title":"权限管理","level":"1.3.6","depth":2,"path":"advance-use/权限管理ACL.md","ref":"advance-use/权限管理ACL.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"advance-use/联盟链.md","mtime":"2021-11-23T05:36:31.918Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-23T06:32:01.328Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"联盟链","level":"1.3.7","depth":2,"next":{"title":"压测使用","level":"1.3.8","depth":2,"path":"advance-use/压测使用.md","ref":"advance-use/压测使用.md","articles":[]},"previous":{"title":"权限管理","level":"1.3.6","depth":2,"path":"advance-use/权限管理ACL.md","ref":"advance-use/权限管理ACL.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"advance-use/联盟链.md","mtime":"2021-11-23T10:35:47.324Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-23T10:35:53.247Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

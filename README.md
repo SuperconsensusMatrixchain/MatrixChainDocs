@@ -16,13 +16,15 @@ git clone https://github.com/superconsensus/MatrixChainDocs.git
 
 ```
 cd MatrixChainDocs
-// makefile 提供了3个命令 build / run /stop
+// makefile 提供了命令 build / run /stop /rebuild
 // 首次运行需要构建镜像
 make build
 // 运行
 make run
 // 停止
 make stop
+// 重新构建
+make rebuild
 ```
 
 3. 访问
