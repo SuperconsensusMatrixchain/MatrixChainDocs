@@ -1,10 +1,9 @@
-### 构建docker容器
-FROM ubuntu:18.04
-USER root
-RUN apt update \
-	&& apt install git npm \
-	&& npm install -g gitbook-cli \
-	&& git clone https://github.com/superconsensus/MatrixChainDocs.git \
-	&& cd MatrixChainDocs
-EXPOSE 4000
-CMD gitbook serve
+# 构建docker容器
+# 基础镜像
+FROM nginx
+# 容器中的工作目录
+WORKDIR /usr/share/nginx/html
+# 将当前的_book路径拷贝到容器的工作目录
+ADD ./_book .
+# 暴露端口方便映射
+EXPOSE 80
