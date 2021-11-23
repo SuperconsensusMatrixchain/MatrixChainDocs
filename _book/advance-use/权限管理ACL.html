@@ -1,0 +1,723 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>权限管理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="联盟链.html" />
+    
+    
+    <link rel="prev" href="平行链群组.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quick-start/">
+            
+                <a href="../quick-start/">
+            
+                    
+                    快速入门 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../quick-start/xchain环境部署.html">
+            
+                <a href="../quick-start/xchain环境部署.html">
+            
+                    
+                    xchain环境部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../quick-start/入门操作.html">
+            
+                <a href="../quick-start/入门操作.html">
+            
+                    
+                    入门操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    进阶使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="三节点网络部署.html">
+            
+                <a href="三节点网络部署.html">
+            
+                    
+                    三节点网络部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="合约管理.html">
+            
+                <a href="合约管理.html">
+            
+                    
+                    合约管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="共识文档.html">
+            
+                <a href="共识文档.html">
+            
+                    
+                    共识使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="链上治理.html">
+            
+                <a href="链上治理.html">
+            
+                    
+                    链上治理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="平行链群组.html">
+            
+                <a href="平行链群组.html">
+            
+                    
+                    平行链群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="权限管理ACL.html">
+            
+                <a href="权限管理ACL.html">
+            
+                    
+                    权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="联盟链.html">
+            
+                <a href="联盟链.html">
+            
+                    
+                    联盟链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="压测使用.html">
+            
+                <a href="压测使用.html">
+            
+                    
+                    压测使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../dev-manual/README.md">
+            
+                <span>
+            
+                    
+                    开发手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../dev-manual/GO-SDK使用说明.html">
+            
+                <a href="../dev-manual/GO-SDK使用说明.html">
+            
+                    
+                    GO-SDK使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../dev-manual/JS-SDK使用说明.html">
+            
+                <a href="../dev-manual/JS-SDK使用说明.html">
+            
+                    
+                    JS-SDK使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../dev-manual/Java-SDK使用说明.html">
+            
+                <a href="../dev-manual/Java-SDK使用说明.html">
+            
+                    
+                    Java-SDK使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../dev-manual/MatrixChain-RPC接口.html">
+            
+                <a href="../dev-manual/MatrixChain-RPC接口.html">
+            
+                    
+                    MatrixChain-rpc接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../design-principle/README.md">
+            
+                <span>
+            
+                    
+                    设计原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../design-principle/整体流程.html">
+            
+                <a href="../design-principle/整体流程.html">
+            
+                    
+                    整体流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../design-principle/密码学基础.html">
+            
+                <a href="../design-principle/密码学基础.html">
+            
+                    
+                    密码学基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../design-principle/P2P网络.html">
+            
+                <a href="../design-principle/P2P网络.html">
+            
+                    
+                    P2P网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../design-principle/共识算法.html">
+            
+                <a href="../design-principle/共识算法.html">
+            
+                    
+                    共识算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../design-principle/账本状态机.html">
+            
+                <a href="../design-principle/账本状态机.html">
+            
+                    
+                    账本状态机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../design-principle/权限管理.html">
+            
+                <a href="../design-principle/权限管理.html">
+            
+                    
+                    权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../design-principle/平行链群组.html">
+            
+                <a href="../design-principle/平行链群组.html">
+            
+                    
+                    平行链群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >权限管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>acl &#x5206;&#x4E3A;&#x4E24;&#x90E8;&#x4EFD;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7684;acl, &#x7B2C;&#x4E8C;&#x4E2A;&#x662F;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x7684;acl&#x3002;</p>
+<h4 id="11-&#x4E2A;&#x4EBA;&#x8D26;&#x53F7;&#xFF0C;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#xFF0C;&#x5408;&#x7EA6;&#x5173;&#x7CFB;&#x4F9D;&#x8D56;">1.1 &#x4E2A;&#x4EBA;&#x8D26;&#x53F7;&#xFF0C;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#xFF0C;&#x5408;&#x7EA6;&#x5173;&#x7CFB;&#x4F9D;&#x8D56;</h4>
+<p>&#x4E2A;&#x4EBA;&#x8D26;&#x53F7;&#x7BA1;&#x7406;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x9700;&#x8981;&#x7B26;&#x5408;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7684;acl&#xFF1A; &#x8D26;&#x53F7;&#x7684;&#x521B;&#x5EFA;&#x3001;&#x6DFB;&#x52A0;&#x548C;&#x5220;&#x9664;AK&#x3001;&#x8BBE;&#x7F6E;AK&#x6743;&#x91CD;&#x3001;&#x6743;&#x9650;&#x6A21;&#x578B;</p>
+<p>&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x7684;acl&#x8BBE;&#x7F6E;&#x4F9D;&#x8D56;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7684;acl&#xFF1A;&#x80CC;&#x4E66;&#x9608;&#x503C;&#xFF0C;AK&#x96C6;&#x5408; &#xFF08;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;acl&#x652F;&#x6301;&#x7684;2&#x79CD;&#x6743;&#x9650;&#x6A21;&#x578B;&#xFF09;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF1A;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7684;acl&#x63D0;&#x4F9B;&#x4E86;5&#x79CD;&#x6A21;&#x578B;&#xFF0C;&#x4F46;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x7684;acl&#x6A21;&#x578B;&#x4EC5;&#x652F;&#x6301;&#x80CC;&#x4E66;&#x9608;&#x503C;&#xFF0C;AK&#x96C6;&#x5408; &#x3002;</p>
+<h4 id="12-&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x4FEE;&#x6539;acl&#x7684;&#x63A5;&#x53E3;">1.2 &#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x4FEE;&#x6539;acl&#x7684;&#x63A5;&#x53E3;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5408;&#x7EA6;&#x63A5;&#x53E3;</th>
+<th>&#x7528;&#x9014;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NewAccountMethod</td>
+<td>&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x8D26;&#x53F7;</td>
+</tr>
+<tr>
+<td>SetAccountACLMethod</td>
+<td>&#x66F4;&#x65B0;&#x8D26;&#x53F7;&#x7684;ACL</td>
+</tr>
+<tr>
+<td>SetMethodACLMethod</td>
+<td>&#x66F4;&#x65B0;&#x5408;&#x7EA6;Method&#x7684;ACL</td>
+</tr>
+</tbody>
+</table>
+<h4 id="13-&#x5173;&#x4E8E;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x6743;&#x9650;&#x9009;&#x62E9;">1.3 &#x5173;&#x4E8E;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x6743;&#x9650;&#x9009;&#x62E9;</h4>
+<p> &#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x6743;&#x9650;&#x6A21;&#x578B;&#x76EE;&#x524D;&#x4EC5;&#x4EC5;&#x652F;&#x6301;&#xFF1A;</p>
+<ol>
+<li>&#x80CC;&#x4E66;&#x9608;&#x503C;&#xFF1A;&#x5728;&#x540D;&#x5355;&#x4E2D;&#x7684;AK&#x6216;Account&#x7B7E;&#x540D;&#x4E14;&#x4ED6;&#x4EEC;&#x7684;&#x6743;&#x91CD;&#x503C;&#x52A0;&#x8D77;&#x6765;&#x8D85;&#x8FC7;&#x4E00;&#x5B9A;&#x9608;&#x503C;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5408;&#x7EA6;</li>
+<li>AK&#x96C6;&#x5408;: &#x5B9A;&#x4E49;&#x591A;&#x7EC4;AK&#x96C6;&#x5408;&#xFF0C;&#x96C6;&#x5408;&#x5185;&#x7684;AK&#x9700;&#x8981;&#x5168;&#x90E8;&#x7B7E;&#x540D;&#xFF0C;&#x96C6;&#x5408;&#x95F4;&#x53EA;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x6709;&#x5168;&#x90E8;&#x7B7E;&#x540D;&#x5373;&#x53EF;</li>
+</ol>
+<p>&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x4EC5;&#x4EC5;&#x63D0;&#x4F9B;&#x4E00;&#x7EC4;&#x4EBA;&#xFF0C;&#x4F7F;&#x7528;&#x80CC;&#x4E66;&#x80CC;&#x4E66;&#x9608;&#x503C;&#x7B56;&#x7565;&#xFF1B;</p>
+<p>&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x4EBA;&#x7BA1;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;AK&#x96C6;&#x5408;&#x7B56;&#x7565;&#xFF1B;</p>
+<p>&#x6CA1;&#x6709;&#x6743;&#x9650;&#x63A7;&#x5236;&#xFF0C;&#x5219;&#x5C31;&#x662F;&#x6240;&#x6709;&#x7528;&#x6237;&#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;&#xFF08;solidity&#xFF09;</p>
+<h4 id="14-&#x8BBE;&#x7F6E;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7684;acl">1.4 &#x8BBE;&#x7F6E;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7684;acl</h4>
+<ol>
+<li>&#x521B;&#x5EFA;&#x5408;&#x7EA6;&#x8D26;&#x53F7;(&#x5FEB;&#x6377;&#x65B9;&#x5F0F;)</li>
+</ol>
+<pre><code>./bin/xchain-cli account new --account 1111111111111111 # 16&#x4F4D;&#x6570;&#x5B57;&#x7EC4;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+</code></pre><p>&#x6B64;&#x65F6;&#x7684;ACL&#x662F;&#x9ED8;&#x8BA4;&#x7684;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x4E0B;&#x62E5;&#x6709;&#x8FD9;&#x4E2A;&#x8D26;&#x53F7;&#x7684;&#x63A7;&#x5236;&#x6743;&#x9650;&#x3002;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x770B;&#x5230;acl:</p>
+<pre><code>./bin/xchain-cli acl query --account XC1111111111111111@xuper
+</code></pre><pre><code>{
+  &quot;pm&quot;: {
+    &quot;rule&quot;: 1,
+    &quot;acceptValue&quot;: 1
+  },
+  &quot;aksWeight&quot;: {
+    &quot;TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY&quot;: 1
+  }
+}
+</code></pre><ol>
+<li>&#x73B0;&#x5728;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x8D26;&#x53F7;&#x7684;ACL&#x89C4;&#x5219;&#x3002;&#x51C6;&#x5907;SetAccountACL.json&#x6587;&#x4EF6;&#xFF0C;&#x5199;&#x5165;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;module_name&quot;</span>: <span class="hljs-string">&quot;xkernel&quot;</span>,
+  <span class="hljs-string">&quot;contract_name&quot;</span>: <span class="hljs-string">&quot;$acl&quot;</span>,
+  <span class="hljs-string">&quot;method_name&quot;</span>: <span class="hljs-string">&quot;SetAccountAcl&quot;</span>,
+  <span class="hljs-string">&quot;args&quot;</span> : {
+    <span class="hljs-string">&quot;account_name&quot;</span>: <span class="hljs-string">&quot;XC1111111111111111@xuper&quot;</span>,
+    <span class="hljs-string">&quot;acl&quot;</span>: <span class="hljs-string">&quot;{\&quot;pm\&quot;: {\&quot;rule\&quot;: 1,\&quot;acceptValue\&quot;: 0.3},\&quot;aksWeight\&quot;: {\&quot;TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY\&quot;: 0.3,\&quot;SmJG3rH2ZzYQ9ojxhbRCPwFiE9y6pD1Co\&quot;: 0.3}}&quot;</span>
+  }
+}
+</code></pre>
+<ol>
+<li>&#x641C;&#x96C6;&#x9700;&#x8981;&#x7B7E;&#x540D;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x4E00;&#x822C;&#x5C06;&#x5730;&#x5740;&#x653E;&#x5728; data/acl/addr</li>
+</ol>
+<pre><code>echo &quot;XC1111111111111111@xuper/$(cat $TestNet/node1/data/keys/address)&quot; &gt; data/acl/addrs
+</code></pre><ol>
+<li><p>&#x751F;&#x6210;&#x9700;&#x8981;&#x7B7E;&#x540D;&#x7684;&#x4EA4;&#x6613;</p>
+<pre><code>./bin/xchain-cli multisig gen --desc SetAccountACL.json --fee 1000000
+</code></pre><ol>
+<li>&#x7B7E;&#x540D;</li>
+</ol>
+</li>
+</ol>
+<pre><code>./bin/xchain-cli multisig sign --output sign.out
+</code></pre><ol>
+<li>&#x53D1;&#x9001;&#x4EA4;&#x6613;</li>
+</ol>
+<pre><code>./bin/xchain-cli multisig send --tx tx.out sign.out sign.out
+</code></pre><ol>
+<li>&#x6B64;&#x65F6;&#x6210;&#x529F;&#x8BBE;&#x7F6E;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7684;acl&#x3002;&#x67E5;&#x8BE2;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7684;acl&#xFF1A;</li>
+</ol>
+<pre><code>/bin/xchain-cli acl query --account XC1111111111111111@xuper
+</code></pre><h4 id="15-&#x8BBE;&#x7F6E;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x7684;acl">1.5 &#x8BBE;&#x7F6E;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x7684;acl</h4>
+<p>&#x5728;&#x6CA1;&#x6709;&#x7ED9;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;ACL&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x6BCF;&#x4E2A;&#x8D26;&#x53F7;&#x90FD;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5230;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x3002;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;acl&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x6EE1;&#x8DB3;&#x6240;&#x5C5E;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7684;acl&#x3002; </p>
+<ol>
+<li>&#x67E5;&#x8BE2;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x7684;acl &#x3002;</li>
+</ol>
+<pre><code>./bin/xchain-cli acl query --contract nftevm --method name
+</code></pre><p>&#x200B;    2.  &#x8BBE;&#x7F6E;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;acl&#x3002;&#x51C6;&#x5907;SetMethodACL.json&#xFF0C;&#x5199;&#x5165;&#xFF1A;</p>
+<pre><code>{
+  &quot;module_name&quot;: &quot;xkernel&quot;,
+  &quot;contract_name&quot;: &quot;$acl&quot;,
+  &quot;method_name&quot;: &quot;SetMethodAcl&quot;,
+  &quot;args&quot; : {
+    &quot;contract_name&quot;: &quot;counter.wasm&quot;,
+    &quot;method_name&quot;: &quot;increase&quot;,
+    &quot;acl&quot;: &quot;{\&quot;pm\&quot;: {\&quot;rule\&quot;: 1,\&quot;acceptValue\&quot;: 1.0},\&quot;aksWeight\&quot;: {\&quot;TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY\&quot;: 1.0,\&quot;SmJG3rH2ZzYQ9ojxhbRCPwFiE9y6pD1Co\&quot;: 1.0}}&quot;
+  }
+}
+</code></pre><ol>
+<li>&#x751F;&#x6210;&#x7B7E;&#x540D;&#x4EA4;&#x6613;</li>
+</ol>
+<pre><code>./bin/xchain-cli multisig gen --desc SetMethodACL.json --from XC1111111111111111@xuper --fee 1000000
+</code></pre><ol>
+<li>&#x641C;&#x96C6;&#x7B7E;&#x540D;</li>
+</ol>
+<pre><code>// node1
+./bin/xchain-cli multisig sign --keys  ./data/keys/ --output sign1.out
+// node2
+./bin/xchain-cli multisig sign --keys ../node2/data/keys/ --output sign2.out
+// &#x53D1;&#x9001;&#x4EA4;&#x6613;
+./bin/xchain-cli multisig send --tx tx.out sign1.out,sign2.out sign1.out,sign2.out
+</code></pre><h4 id="16-acl-&#x6570;&#x636E;&#x7ED3;&#x6784;">1.6 ACL &#x6570;&#x636E;&#x7ED3;&#x6784;</h4>
+<pre><code>// --------   Account and Permission Section -------
+enum PermissionRule {
+    NULL = 0;             // &#x65E0;&#x6743;&#x9650;&#x63A7;&#x5236;
+    SIGN_THRESHOLD = 1;   // &#x7B7E;&#x540D;&#x9608;&#x503C;&#x7B56;&#x7565;
+    SIGN_AKSET = 2;       // AKSet&#x7B7E;&#x540D;&#x7B56;&#x7565;
+    SIGN_RATE = 3;        // &#x7B7E;&#x540D;&#x7387;&#x7B56;&#x7565;
+    SIGN_SUM = 4;         // &#x7B7E;&#x540D;&#x4E2A;&#x6570;&#x7B56;&#x7565;
+    CA_SERVER = 5;        // CA&#x670D;&#x52A1;&#x5668;&#x9274;&#x6743;
+    COMMUNITY_VOTE = 6;   // &#x793E;&#x533A;&#x6CBB;&#x7406;
+}
+
+message PermissionModel {
+    PermissionRule rule = 1;
+    double acceptValue = 2;    // &#x53D6;&#x51B3;&#x4E8E;&#x7528;&#x54EA;&#x79CD;rule, &#x53EF;&#x4EE5;&#x8868;&#x793A;&#x7B7E;&#x540D;&#x7387;&#xFF0C;&#x7B7E;&#x540D;&#x6570;&#x6216;&#x6743;&#x91CD;&#x9608;&#x503C;
+}
+
+// AK&#x96C6;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;
+message AkSet {
+    repeated string aks = 1; //&#x4E00;&#x5806;&#x516C;&#x94A5;
+}
+
+message AkSets {
+    map&lt;string, AkSet&gt; sets = 1;   // &#x516C;&#x94A5;or&#x8D26;&#x53F7;&#x540D;&#x96C6;
+    string expression = 2;      // &#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E00;&#x671F;&#x4E0D;&#x652F;&#x6301;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x96C6;&#x5408;&#x5185;&#x662F;and&#xFF0C;&#x96C6;&#x5408;&#x95F4;&#x662F;or
+}
+
+// Acl&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x7684;&#x7ED3;&#x6784;
+message Acl {
+    PermissionModel  pm = 1;             // &#x91C7;&#x7528;&#x7684;&#x6743;&#x9650;&#x6A21;&#x578B;
+    map&lt;string, double&gt;  aksWeight = 2;  // &#x516C;&#x94A5;or&#x8D26;&#x53F7;&#x540D;  -&gt; &#x6743;&#x91CD;
+    AkSets akSets = 3;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="平行链群组.html" class="navigation navigation-prev " aria-label="Previous page: 平行链群组">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="联盟链.html" class="navigation navigation-next " aria-label="Next page: 联盟链">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"权限管理","level":"1.3.6","depth":2,"next":{"title":"联盟链","level":"1.3.7","depth":2,"path":"advance-use/联盟链.md","ref":"advance-use/联盟链.md","articles":[]},"previous":{"title":"平行链群组","level":"1.3.5","depth":2,"path":"advance-use/平行链群组.md","ref":"advance-use/平行链群组.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"advance-use/权限管理ACL.md","mtime":"2021-11-18T05:58:52.681Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-23T06:32:01.328Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -10,6 +10,7 @@
 	* [平行链群组](advance-use/平行链群组.md)
 	* [权限管理](advance-use/权限管理ACL.md)
 	* [联盟链](advance-use/联盟链.md)
+	* [压测使用](advance-use/压测使用.md)
 
 * [开发手册](dev-manual/README.md)
 	* [GO-SDK使用说明](dev-manual/GO-SDK使用说明.md)
