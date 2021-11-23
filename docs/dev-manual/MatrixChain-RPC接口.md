@@ -1,6 +1,6 @@
 ### 1.1 rpc接口介绍
 
-查看XuperChain的 [proto文件](https://github.com/xuperchain/xuperchain/blob/master/service/pb/xchain.proto) ，可以在service定义中获取所有支持的RPC接口。
+查看matrixchain的 [proto文件](https://github.com/xuperchain/xuperchain/blob/master/service/pb/xchain.proto) ，可以在service定义中获取所有支持的RPC接口。
 
 #### 1.1.1 GetBalance
 

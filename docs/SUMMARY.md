@@ -8,14 +8,14 @@
 	* [共识使用](advance-use/共识文档.md)
 	* [链上治理](advance-use/链上治理.md)
 	* [平行链群组](advance-use/平行链群组.md)
-	* [权限管理](权限管理ACL.md)
-	* [联盟链](联盟链.md)
+	* [权限管理](advance-use/权限管理ACL.md)
+	* [联盟链](advance-use/联盟链.md)
 
 * [开发手册](dev-manual/README.md)
 	* [GO-SDK使用说明](dev-manual/GO-SDK使用说明.md)
 	* [JS-SDK使用说明](dev-manual/JS-SDK使用说明.md)
 	* [Java-SDK使用说明](dev-manual/Java-SDK使用说明.md)
-	* [XuperChain-rpc接口](dev-manual/XuperChain-RPC接口.md)
+	* [MatrixChain-rpc接口](dev-manual/MatrixChain-RPC接口.md)
 
 * [设计原理](design-principle/README.md)
 	* [整体流程](design-principle/整体流程.md)
@@ -25,3 +25,4 @@
 	* [账本状态机](design-principle/账本状态机.md)
 	* [权限管理](design-principle/权限管理.md)
 	* [平行链群组](design-principle/平行链群组.md)
+
