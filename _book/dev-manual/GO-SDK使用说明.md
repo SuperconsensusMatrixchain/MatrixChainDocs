@@ -5,7 +5,7 @@ Go SDK 可以在github上下载:https://github.com/superconsensus-chain/xuper-sd
 #### 1.2 安装
 
 - ```
-  go get github.com/xuperchain/xuper-sdk-go/v2
+  go get github.com/superconsensus-chain/xuper-sdk-go/v2
   ```
 
 #### 1.3 使用 go sdk

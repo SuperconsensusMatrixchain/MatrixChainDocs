@@ -11,6 +11,7 @@
 	* [权限管理](advance-use/权限管理ACL.md)
 	* [联盟链](advance-use/联盟链.md)
 	* [压测使用](advance-use/压测使用.md)
+	* [监管机制使用](advance-use/监管机制.md)
 
 * [开发手册](dev-manual/README.md)
 	* [GO-SDK使用说明](dev-manual/GO-SDK使用说明.md)
@@ -27,3 +28,6 @@
 	* [权限管理](design-principle/权限管理.md)
 	* [平行链群组](design-principle/平行链群组.md)
 
+* [更多资料](more-info/README.md)
+	* [配置解析](more-info/配置解析.md)
+	* [源码结构解析](more-info/源码解读.md)

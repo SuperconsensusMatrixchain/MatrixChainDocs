@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>平行链群组 · GitBook</title>
+        <title>配置解析 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../more-info/README.md" />
+    <link rel="next" href="源码解读.html" />
     
     
-    <link rel="prev" href="权限管理.html" />
+    <link rel="prev" href="README.md" />
     
 
     </head>
@@ -354,7 +354,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="README.md">
+        <li class="chapter " data-level="1.5" data-path="../design-principle/README.md">
             
                 <span>
             
@@ -368,9 +368,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="整体流程.html">
+        <li class="chapter " data-level="1.5.1" data-path="../design-principle/整体流程.html">
             
-                <a href="整体流程.html">
+                <a href="../design-principle/整体流程.html">
             
                     
                     整体流程
@@ -381,9 +381,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="密码学基础.html">
+        <li class="chapter " data-level="1.5.2" data-path="../design-principle/密码学基础.html">
             
-                <a href="密码学基础.html">
+                <a href="../design-principle/密码学基础.html">
             
                     
                     密码学基础
@@ -394,9 +394,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="P2P网络.html">
+        <li class="chapter " data-level="1.5.3" data-path="../design-principle/P2P网络.html">
             
-                <a href="P2P网络.html">
+                <a href="../design-principle/P2P网络.html">
             
                     
                     P2P网络
@@ -407,9 +407,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="共识算法.html">
+        <li class="chapter " data-level="1.5.4" data-path="../design-principle/共识算法.html">
             
-                <a href="共识算法.html">
+                <a href="../design-principle/共识算法.html">
             
                     
                     共识算法
@@ -420,9 +420,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="账本状态机.html">
+        <li class="chapter " data-level="1.5.5" data-path="../design-principle/账本状态机.html">
             
-                <a href="账本状态机.html">
+                <a href="../design-principle/账本状态机.html">
             
                     
                     账本状态机
@@ -433,9 +433,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="权限管理.html">
+        <li class="chapter " data-level="1.5.6" data-path="../design-principle/权限管理.html">
             
-                <a href="权限管理.html">
+                <a href="../design-principle/权限管理.html">
             
                     
                     权限管理
@@ -446,9 +446,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.7" data-path="平行链群组.html">
+        <li class="chapter " data-level="1.5.7" data-path="../design-principle/平行链群组.html">
             
-                <a href="平行链群组.html">
+                <a href="../design-principle/平行链群组.html">
             
                     
                     平行链群组
@@ -464,7 +464,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../more-info/README.md">
+        <li class="chapter " data-level="1.6" data-path="README.md">
             
                 <span>
             
@@ -478,9 +478,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="../more-info/配置解析.html">
+        <li class="chapter active" data-level="1.6.1" data-path="配置解析.html">
             
-                <a href="../more-info/配置解析.html">
+                <a href="配置解析.html">
             
                     
                     配置解析
@@ -491,9 +491,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="../more-info/源码解读.html">
+        <li class="chapter " data-level="1.6.2" data-path="源码解读.html">
             
-                <a href="../more-info/源码解读.html">
+                <a href="源码解读.html">
             
                     
                     源码结构解析
@@ -539,7 +539,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >平行链群组</a>
+        <a href=".." >配置解析</a>
     </h1>
 </div>
 
@@ -554,21 +554,123 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x5E73;&#x884C;&#x94FE;&#x7FA4;&#x7EC4;&#x7528;&#x6765;&#x5BF9;matrixchain&#x7684;&#x7279;&#x5B9A;&#x533A;&#x5757;&#x94FE;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#xFF0C;&#x8BE5;&#x529F;&#x80FD;&#x9700;&#x914D;&#x5408;matrixchain-Front&#x8054;&#x5408;&#x4F7F;&#x7528;&#x4EE5;&#x6700;&#x7EC8;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;&#x6027;.</p>
-<h4 id="71--&#x5E73;&#x884C;&#x94FE;&#x7FA4;&#x7EC4;&#x6D41;&#x7A0B;">7.1  &#x5E73;&#x884C;&#x94FE;&#x7FA4;&#x7EC4;&#x6D41;&#x7A0B;</h4>
-<p>&#x5E73;&#x884C;&#x94FE;&#x3001;&#x7FA4;&#x7EC4;&#x548C;CA&#x4E2D;&#x5FC3;&#x7684;&#x8FD0;&#x884C;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
-<p><img src="../images/xfront_xchain_access_control.jpg" alt="&#x5E73;&#x884C;&#x94FE;"></p>
-<p>&#x5E73;&#x884C;&#x94FE;&#x7FA4;&#x7EC4;&#x7684;&#x8BBE;&#x8BA1;&#x53C2;&#x8003;&#x4E86;Fabric&#x5BF9;&#x7EC4;&#x7EC7;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;Group&#x4EE3;&#x8868;&#x4E00;&#x7FA4;&#x8EAB;&#x4EFD;&#x5B9E;&#x4F53;&#x7684;&#x96C6;&#x5408;&#xFF0C;Group&#x4E2D;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x5730;&#x5740;&#x4FE1;&#x606F;&#xFF0C;&#x5219;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x5171;&#x4EAB;&#x5E73;&#x884C;&#x94FE;&#x3002; - &#x521B;&#x5EFA;&#x5E73;&#x884C;&#x94FE;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x7EC4;&#x7EC7;&#x5217;&#x8868;Group&#xFF0C;ParaChain&#x53EA;&#x5141;&#x8BB8;&#x7EC4;&#x7EC7;&#x5217;&#x8868;Group&#x4E2D;&#x7684;&#x8EAB;&#x4EFD;&#x8BBF;&#x95EE;&#x5176;&#x8BFB;&#x5199;&#x63A5;&#x53E3;&#x3002;</p>
+                                <h4 id="1-conf&#x76EE;&#x5F55;">1 conf&#x76EE;&#x5F55;</h4>
+<p>conf&#x6587;&#x4EF6;&#x5939;&#x6709;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x76EE;&#x524D;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x76EE;&#x5F55;&#x540D;</th>
+<th>&#x529F;&#x80FD;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conf/</td>
+<td>&#x914D;&#x7F6E;&#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>&#x251C;&#x2500; contract.yaml</td>
+<td>&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;wasm/evm/native&#x914D;&#x7F6E;&#x7EC6;&#x8282;</td>
+</tr>
+<tr>
+<td>&#x251C;&#x2500; engine.yaml</td>
+<td>&#x5F15;&#x64CE;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>&#x251C;&#x2500; env.yaml</td>
+<td>&#x5404;&#x7EC4;&#x4EF6;&#x914D;&#x7F6E;&#x8DEF;&#x5F84;&#x548C;metric&#x5F00;&#x5173;</td>
+</tr>
+<tr>
+<td>&#x251C;&#x2500; ledger.yaml</td>
+<td>&#x8D26;&#x672C;&#x5B58;&#x50A8;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>&#x251C;&#x2500; log.yaml</td>
+<td>&#x65E5;&#x5FD7;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>&#x251C;&#x2500; network.yaml</td>
+<td>p2p&#x7F51;&#x7EDC;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td>&#x251C;&#x2500; server.yaml</td>
+<td>&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;&#x5404;&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#x914D;&#x7F6E;&#x548C;TLS&#x5F00;&#x5173;</td>
+</tr>
+<tr>
+<td>&#x2514;&#x2500; xchain-cli.yaml</td>
+<td>&#x80CC;&#x4E66;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x5F00;&#x653E;&#x7F51;&#x7EDC;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-&#x7F51;&#x7EDC;&#x914D;&#x7F6E;">2 &#x7F51;&#x7EDC;&#x914D;&#x7F6E;</h4>
+<p>network.yaml &#x63CF;&#x8FF0;&#x4E86;xchain&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x60C5;&#x51B5;&#xFF0C;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x529F;&#x80FD;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>module</td>
+<td>&#x6307;&#x5B9A;p2p&#x7EC4;&#x4EF6;&#xFF0C;&#x5305;&#x62EC;p2pv1&#x3001;p2pv2&#x4E24;&#x79CD;&#xFF0C;&#x524D;&#x8005;&#x4E3A;grpc&#x76F4;&#x8FDE;&#x5B9E;&#x73B0;&#xFF0C;&#x540E;&#x8005;&#x4F7F;&#x7528;&#x4E86;libp2p</td>
+</tr>
+<tr>
+<td>address</td>
+<td>&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;ip&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>keyPath</td>
+<td>&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x8DEF;&#x5F84;&#xFF0C;&#x8BE5;&#x8DEF;&#x5F84;&#x4E0B;&#x653E;&#x7F6E;&#x7528;&#x4E8E;&#x901A;&#x8BAF;&#x9700;&#x8981;&#x7684;&#x516C;&#x79C1;&#x94A5;&#x5BF9;&#x548C;&#x8BC1;&#x4E66;</td>
+</tr>
+<tr>
+<td>bootNodes</td>
+<td>&#x79CD;&#x5B50;&#x8282;&#x70B9;&#x5730;&#x5740;&#xFF0C;&#x9700;&#x7B26;&#x5408;libp2p&#x5730;&#x5740;&#x8981;&#x6C42;&#xFF0C;&#x6307;&#x5B9A;&#x5BF9;&#x7B49;&#x8282;&#x70B9;&#x5730;&#x5740; &#x672C;&#x5730;&#x8282;&#x70B9;&#x5730;&#x5740;&#x53EF;&#x901A;&#x8FC7;xchain-cli netURL preview &#x67E5;&#x770B;&#xFF0C;&#x6CE8;&#x610F;&#x66FF;&#x4EE3;ip&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x53F7;</td>
+</tr>
+<tr>
+<td>staticNodes</td>
+<td>&#x9759;&#x6001;&#x8282;&#x70B9;&#x5730;&#x5740;&#xFF0C;&#x4E0E;&#x79CD;&#x5B50;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#xFF0C;&#x8BE5;&#x9009;&#x9879;&#x4E0D;&#x652F;&#x6301;&#x8282;&#x70B9;&#x63A2;&#x8BE2;&#xFF0C;&#x4E3A;&#x9759;&#x6001;&#x76F4;&#x8FDE;&#x914D;&#x7F6E;</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li><p>Group&#x6709;admin&#x6743;&#x9650;&#xFF0C;&#x5176;&#x4E3A;&#x4E00;&#x4E2A;list&#x7ED3;&#x6784;&#xFF0C;admin&#x53EF;&#x4EE5;&#x6709;&#x6743;&#x9650;&#x5411;Group&#x6DFB;&#x52A0;&#x548C;&#x5220;&#x9664;&#x6210;&#x5458;&#x3002;</p>
-</li>
-<li><p>Group&#x6709;identities&#x6743;&#x9650;&#xFF0C;&#x5176;&#x4E3A;&#x4E00;&#x4E2A;list&#x7ED3;&#x6784;&#xFF0C;identities&#x53EF;&#x4EE5;&#x6709;&#x6743;&#x9650;&#x67E5;&#x8BE2;Group&#x4E2D;&#x7684;&#x5408;&#x7EA6;&#x4FE1;&#x606F;&#x3002;</p>
-</li>
-<li><p>&#x66F4;&#x6539;Group&#x4FE1;&#x606F;&#x901A;&#x8FC7;&#x7CFB;&#x7EDF;&#x5408;&#x7EA6;&#x5B9E;&#x73B0;&#xFF0C;editGroupchain&#x65B9;&#x6CD5;&#x3002;</p>
-</li>
+<li>&#x6CE8;&#x610F;: bootNodes&#x5728;&#x914D;&#x7F6E;&#x65F6;&#xFF0C;&#x4E0D;&#x8981;&#x94FE;&#x63A5;&#x672C;&#x5730;&#x5F53;&#x524D;&#x8282;&#x70B9;</li>
 </ul>
-<h4 id="72-&#x6280;&#x672F;&#x7EC6;&#x8282;">7.2 &#x6280;&#x672F;&#x7EC6;&#x8282;</h4>
-<p><img src="../images/group_impl.jpg" alt="&#x6280;&#x672F;&#x7EC6;&#x8282;"></p>
+<h4 id="3-&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;">3 &#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</h4>
+<p>server.yaml &#x63CF;&#x8FF0;&#x4E86;xchain&#x5404;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#x60C5;&#x51B5;&#xFF0C;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x529F;&#x80FD;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rpcPort</td>
+<td>xchain&#x670D;&#x52A1;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>metricPort</td>
+<td>xchain&#x670D;&#x52A1;promethues&#x6253;&#x70B9;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>GWPort</td>
+<td>xchain http&#x670D;&#x52A1;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>enableEndorser</td>
+<td>xchain&#x670D;&#x52A1;&#x662F;&#x5426;&#x5F00;&#x542F;&#x80CC;&#x4E66;&#x5F00;&#x5173;</td>
+</tr>
+<tr>
+<td>enableTls</td>
+<td>xchain&#x670D;&#x52A1;&#x662F;&#x5426;&#x4F7F;&#x7528;TLS&#x901A;&#x4FE1;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-&#x521B;&#x4E16;&#x5757;&#x914D;&#x7F6E;">4 &#x521B;&#x4E16;&#x5757;&#x914D;&#x7F6E;</h4>
+<p>&#x521B;&#x4E16;&#x5757;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728;/data/genesis/&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF0C;xuper.json&#x662F;xchain&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x521B;&#x4E16;&#x5757;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x4F59;&#x4E3A;&#x793A;&#x4F8B;&#x6587;&#x4EF6;&#x3002;</p>
 
                                 
                                 </section>
@@ -596,12 +698,12 @@
 
             
                 
-                <a href="权限管理.html" class="navigation navigation-prev " aria-label="Previous page: 权限管理">
+                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: 更多资料">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../more-info/README.md" class="navigation navigation-next " aria-label="Next page: 更多资料">
+                <a href="源码解读.html" class="navigation navigation-next " aria-label="Next page: 源码结构解析">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -612,7 +714,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"平行链群组","level":"1.5.7","depth":2,"next":{"title":"更多资料","level":"1.6","depth":1,"path":"more-info/README.md","ref":"more-info/README.md","articles":[{"title":"配置解析","level":"1.6.1","depth":2,"path":"more-info/配置解析.md","ref":"more-info/配置解析.md","articles":[]},{"title":"源码结构解析","level":"1.6.2","depth":2,"path":"more-info/源码解读.md","ref":"more-info/源码解读.md","articles":[]}]},"previous":{"title":"权限管理","level":"1.5.6","depth":2,"path":"design-principle/权限管理.md","ref":"design-principle/权限管理.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"design-principle/平行链群组.md","mtime":"2021-11-23T04:50:08.246Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-24T06:49:01.788Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"配置解析","level":"1.6.1","depth":2,"next":{"title":"源码结构解析","level":"1.6.2","depth":2,"path":"more-info/源码解读.md","ref":"more-info/源码解读.md","articles":[]},"previous":{"title":"更多资料","level":"1.6","depth":1,"path":"more-info/README.md","ref":"more-info/README.md","articles":[{"title":"配置解析","level":"1.6.1","depth":2,"path":"more-info/配置解析.md","ref":"more-info/配置解析.md","articles":[]},{"title":"源码结构解析","level":"1.6.2","depth":2,"path":"more-info/源码解读.md","ref":"more-info/源码解读.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"more-info/配置解析.md","mtime":"2021-11-24T06:25:19.296Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-24T06:49:01.788Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
