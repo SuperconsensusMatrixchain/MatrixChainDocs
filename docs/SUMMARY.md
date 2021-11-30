@@ -1,9 +1,8 @@
 * [快速入门 ](quick-start/README.md)
-	* [xchain环境部署](quick-start/xchain环境部署.md)
-	* [入门操作](quick-start/入门操作.md)
+	* [MatrixChain环境部署](quick-start/MatrixChain环境部署.md)
+	* [常用操作](quick-start/常用操作.md)
 
 * [进阶使用](advance-use/README.md)
-	* [三节点网络部署](advance-use/三节点网络部署.md)
 	* [合约管理](advance-use/合约管理.md)
 	* [共识使用](advance-use/共识文档.md)
 	* [链上治理](advance-use/链上治理.md)

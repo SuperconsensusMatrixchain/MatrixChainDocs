@@ -1,11 +1,11 @@
 ####   1.1 下载go sdk 
 
-Go SDK 可以在github上下载:https://github.com/superconsensus-chain/xuper-sdk-go
+Go SDK 可以在github上下载:https://github.com/superconsensus/matrix-sdk-go.git
 
 #### 1.2 安装
 
 - ```
-  go get github.com/superconsensus-chain/xuper-sdk-go/v2
+  go get github.com/superconsensus/matrix-sdk-go/v2
   ```
 
 #### 1.3 使用 go sdk
@@ -112,6 +112,3 @@ blockResult, _ := xclient.QueryBlockByID(blockID)
 txID := "c3af3abde7f800dd8782ce8a7559e5bdd7fe712c9efd56d9aeb7f9d2be253730"
 tx, err := client.QueryTxByID(txID)
 ```
-
-以上为常用接口使用方法，如果还需要进行其他接口相关查询，请参考 [Go SDK](https://github.com/xuperchain/xuper-sdk-go/blob/2.0.0/xuper/xuperclient.go)
-

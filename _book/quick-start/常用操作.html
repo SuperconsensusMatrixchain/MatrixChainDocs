@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>xchain环境部署 · GitBook</title>
+        <title>常用操作 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="入门操作.html" />
+    <link rel="next" href="../advance-use/" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="MatrixChain环境部署.html" />
     
 
     </head>
@@ -116,12 +116,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="xchain环境部署.html">
+        <li class="chapter " data-level="1.2.1" data-path="MatrixChain环境部署.html">
             
-                <a href="xchain环境部署.html">
+                <a href="MatrixChain环境部署.html">
             
                     
-                    xchain环境部署
+                    MatrixChain环境部署
             
                 </a>
             
@@ -129,12 +129,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="入门操作.html">
+        <li class="chapter active" data-level="1.2.2" data-path="常用操作.html">
             
-                <a href="入门操作.html">
+                <a href="常用操作.html">
             
                     
-                    入门操作
+                    常用操作
             
                 </a>
             
@@ -161,20 +161,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../advance-use/三节点网络部署.html">
-            
-                <a href="../advance-use/三节点网络部署.html">
-            
-                    
-                    三节点网络部署
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.2" data-path="../advance-use/合约管理.html">
+        <li class="chapter " data-level="1.3.1" data-path="../advance-use/合约管理.html">
             
                 <a href="../advance-use/合约管理.html">
             
@@ -187,7 +174,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../advance-use/共识文档.html">
+        <li class="chapter " data-level="1.3.2" data-path="../advance-use/共识文档.html">
             
                 <a href="../advance-use/共识文档.html">
             
@@ -200,7 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../advance-use/链上治理.html">
+        <li class="chapter " data-level="1.3.3" data-path="../advance-use/链上治理.html">
             
                 <a href="../advance-use/链上治理.html">
             
@@ -213,7 +200,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../advance-use/平行链群组.html">
+        <li class="chapter " data-level="1.3.4" data-path="../advance-use/平行链群组.html">
             
                 <a href="../advance-use/平行链群组.html">
             
@@ -226,7 +213,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../advance-use/权限管理ACL.html">
+        <li class="chapter " data-level="1.3.5" data-path="../advance-use/权限管理ACL.html">
             
                 <a href="../advance-use/权限管理ACL.html">
             
@@ -239,7 +226,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="../advance-use/联盟链.html">
+        <li class="chapter " data-level="1.3.6" data-path="../advance-use/联盟链.html">
             
                 <a href="../advance-use/联盟链.html">
             
@@ -252,7 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="../advance-use/压测使用.html">
+        <li class="chapter " data-level="1.3.7" data-path="../advance-use/压测使用.html">
             
                 <a href="../advance-use/压测使用.html">
             
@@ -265,7 +252,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.9" data-path="../advance-use/监管机制.md">
+        <li class="chapter " data-level="1.3.8" data-path="../advance-use/监管机制.md">
             
                 <span>
             
@@ -539,7 +526,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >xchain环境部署</a>
+        <a href=".." >常用操作</a>
     </h1>
 </div>
 
@@ -554,155 +541,95 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="11-&#x51C6;&#x5907;&#x73AF;&#x5883;">1.1 &#x51C6;&#x5907;&#x73AF;&#x5883;</h4>
-<ul>
-<li><p>&#x5B89;&#x88C5;go&#x73AF;&#x5883;&#xFF0C;&#x7248;&#x672C;&#x4E3A;1.13&#x6216;&#x66F4;&#x9AD8;
-  &#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;<a href="https://golang.org/dl/" title="golang" target="_blank">golang</a></p>
-</li>
-<li><p>&#x5B89;&#x88C5;git</p>
-<p>Ubuntu/Debine&#xFF1A;<code>sudo apt install git</code></p>
-<p>window:  <a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a></p>
-<p>Centos: <code>yum install git</code></p>
-</li>
-</ul>
-<h4 id="12-&#x7F16;&#x8BD1;matrixchain">1.2 &#x7F16;&#x8BD1;matrixchain</h4>
-<ul>
-<li>&#x4E0B;&#x8F7D;matrixchain&#x6E90;&#x7801;<ul>
-<li>git clone <a href="https://github.com/superconsnesus-chain/matrixchain" target="_blank">https://github.com/superconsnesus-chain/matrixchain</a></li>
-</ul>
-</li>
-<li>&#x6267;&#x884C;&#x547D;&#x4EE4;<pre><code>$ cd matrixchain
-$ make
-</code></pre></li>
-<li>&#x5728;output&#x76EE;&#x5F55;&#x4E0B;bin&#xFF0C;conf&#xFF0C; data &#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4EE5;&#x53CA;&#x4E00;&#x4E2A; control.sh &#x811A;&#x672C;</li>
-</ul>
-<h4 id="13-&#x90E8;&#x7F72;xchain&#x670D;&#x52A1;">1.3 &#x90E8;&#x7F72;xchain&#x670D;&#x52A1;</h4>
-<h5 id="1-&#x542F;&#x52A8;&#x670D;&#x52A1;">1 &#x542F;&#x52A8;&#x670D;&#x52A1;</h5>
-<p>matrixchain&#x4E3A;&#x6211;&#x4EEC;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x4E86;&#x65B9;&#x4FBF;&#x7684;&#x811A;&#x672C;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x4F7F;&#x7528;controll.sh&#x5373;&#x53EF;&#x542F;&#x52A8;&#x5355;&#x8282;&#x70B9; single &#x5171;&#x8BC6;&#x7684;&#x94FE;&#x3002;</p>
-<pre><code># &#x5207;&#x6362;&#x5230;output&#x76EE;&#x5F55;&#x4E0B;
-$ cd output
-# &#x4F7F;&#x7528;&#x811A;&#x672C;&#x542F;&#x52A8;&#x670D;&#x52A1;
-$ bash control.sh start
-</code></pre><p>control.sh &#x811A;&#x672C;&#x63D0;&#x4F9B;&#x4E86;4&#x4E2A;&#x547D;&#x4EE4;&#xFF1A;start | stop | restart | forcestop&#xFF0C;
-&#x53EF;&#x4EE5;&#x4F7F;&#x7528;bash control.sh help &#x67E5;&#x770B;&#x3002;</p>
-<p>&#x5404;&#x76EE;&#x5F55;&#x7684;&#x529F;&#x80FD;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
-<table>
-<thead>
-<tr>
-<th>&#x76EE;&#x5F55;&#x540D;</th>
-<th>&#x529F;&#x80FD;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>output/</td>
-<td>&#x8282;&#x70B9;&#x6839;&#x76EE;&#x5F55;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; bin</td>
-<td>&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x76EE;&#x5F55;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; wasm2c</td>
-<td>XVM &#x865A;&#x62DF;&#x673A;&#x5DE5;&#x5177;&#xFF0C;&#x5C06; WASM &#x8F6C;&#x4E3A; C</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; xchain</td>
-<td>matrixchain&#x670D;&#x52A1;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; xchain-cli</td>
-<td>matrixxchain&#x5BA2;&#x6237;&#x7AEF;&#x5DE5;&#x5177;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; conf</td>
-<td>&#x914D;&#x7F6E;&#x76F8;&#x5173;&#x76EE;&#x5F55;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; xchain.yaml</td>
-<td>matrixchain&#x670D;&#x52A1;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF08;&#x6CE8;&#x610F;&#x7AEF;&#x53E3;&#x51B2;&#x7A81;&#xFF09;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; engine.yaml</td>
-<td>&#x5F15;&#x64CE;&#x76F8;&#x5173;&#x914D;&#x7F6E;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; env.yaml</td>
-<td>&#x672C;&#x5730;&#x73AF;&#x5883;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#xFF0C;&#x8BBE;&#x7F6E;key&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#x7B49;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; ledger.yaml</td>
-<td>&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#xFF0C;levelDB&#x7B49;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; log.yaml</td>
-<td>&#x65E5;&#x5FD7;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#xFF0C;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF0C;&#x4FDD;&#x7559;&#x65F6;&#x95F4;&#x7B49;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; network.yaml</td>
-<td>&#x7F51;&#x7EDC;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#xFF0C;&#x5355;&#x673A;&#x591A;&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x65F6;&#x9700;&#x66F4;&#x6539;&#x7AEF;&#x53E3;&#x7B49;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; server.yaml</td>
-<td>&#x670D;&#x52A1;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#xFF0C;&#x5982;&#x7AEF;&#x53E3;&#xFF0C;tls&#x7B49;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; xchain-cli.yaml</td>
-<td>matrixxchain&#x5BA2;&#x6237;&#x7AEF;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#xFF0C;&#x4EA4;&#x6613;&#x662F;&#x5426;&#x9700;&#x8981;&#x914D;&#x7F6E;&#xFF0C;&#x4EA4;&#x6613;&#x53D1;&#x9001;&#x8282;&#x70B9;&#x7B49;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; control.sh</td>
-<td>&#x542F;&#x52A8;&#x811A;&#x672C;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; data</td>
-<td>&#x6570;&#x636E;&#x7684;&#x5B58;&#x653E;&#x76EE;&#x5F55;&#xFF0C;&#x521B;&#x4E16;&#x5757;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x53CA;&#x5171;&#x8BC6;&#x548C;&#x5408;&#x7EA6;&#x7684;&#x6837;&#x4F8B;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; blockchain</td>
-<td>&#x8D26;&#x672C;&#x76EE;&#x5F55;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; keys</td>
-<td>&#x6B64;&#x8282;&#x70B9;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5177;&#x6709;&#x5168;&#x5C40;&#x552F;&#x4E00;&#x6027;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x251C;&#x2500; netkeys</td>
-<td>&#x6B64;&#x8282;&#x70B9;&#x7684;&#x7F51;&#x7EDC;&#x6807;&#x8BC6;ID&#xFF0C;&#x5177;&#x6709;&#x5168;&#x5C40;&#x552F;&#x4E00;&#x6027;</td>
-</tr>
-<tr>
-<td>&#x2502; &#xB7;&#xB7;&#xB7; &#x2514;&#x2500; config</td>
-<td>&#x5305;&#x62EC;&#x521B;&#x59CB;&#x7684;&#x5171;&#x8BC6;&#xFF0C;&#x521D;&#x59CB;&#x7684;&#x8D44;&#x6E90;&#x6570;&#xFF0C;&#x77FF;&#x5DE5;&#x5956;&#x52B1;&#x673A;&#x5236;&#x7B49;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; logs</td>
-<td>&#x7A0B;&#x5E8F;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; tmp</td>
-<td>&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x76EE;&#x524D;&#x5B58;&#x50A8;&#x8FDB;&#x7A0B;pid</td>
-</tr>
-</tbody>
-</table>
-<h5 id="2-&#x786E;&#x8BA4;&#x670D;&#x52A1;&#x72B6;&#x6001;">2 &#x786E;&#x8BA4;&#x670D;&#x52A1;&#x72B6;&#x6001;</h5>
-<pre><code># &#x786E;&#x8BA4;&#x670D;&#x52A1;&#x72B6;&#x6001;
-$ ./bin/xchain-cli status -H 127.0.0.1:37101
- {
-   &quot;blockchains&quot;: [
-   {
-     &quot;name&quot;: &quot;xuper&quot;,
-     &quot;ledger&quot;: {
-       &quot;rootBlockid&quot;: &quot;d93c260ea5639a55e1fcad3df494495efad5c65d46e846b6db3a9194a4212886&quot;,
-       &quot;tipBlockid&quot;: &quot;9555ca5af579db67734f27013dfaae48d93e4c3e8adcf6ca8f3dc1adb06d0b6f&quot;,
-       &quot;trunkHeight&quot;: 137
-     },
-     ....
-         &quot;9555ca5af579db67734f27013dfaae48d93e4c3e8adcf6ca8f3dc1adb06d0b6f&quot;
-      ]
-     }
+                                <h4 id="21-&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x8D26;&#x53F7;">2.1 &#x521B;&#x5EFA;&#x65B0;&#x7684;&#x8D26;&#x53F7;</h4>
+<p>matrixchain&#x4E2D;&#xFF0C;&#x8D26;&#x53F7;&#x7C7B;&#x578B;&#x5206;&#x4E3A;&quot;&#x666E;&#x901A;&#x8D26;&#x53F7;&quot;&#x548C;&quot;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&quot;&#x3002;
+&#x666E;&#x901A;&#x8D26;&#x53F7;&#x7531;&#x7A0B;&#x5E8F;&#x79BB;&#x7EBF;&#x751F;&#x6210;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x672C;&#x5730;&#x3002;
+&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#xFF0C;&#x662F;&#x5728;&#x94FE;&#x4E0A;&#x751F;&#x6210;&#x7684;16&#x4F4D;&#x6570;&#x5B57;&#x8D26;&#x53F7;&#x3002;
+&#x4E0B;&#x9762;&#x662F;&#x751F;&#x6210;&#x76F8;&#x5173;&#x8D26;&#x53F7;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code># &#x521B;&#x5EFA;&#x666E;&#x901A;&#x7528;&#x6237;, &#x751F;&#x6210;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x516C;&#x94A5;&#xFF0C;&#x79C1;&#x94A5;&#x5728;--output &#x6307;&#x5B9A;&#x4F4D;&#x7F6E;
+$ ./bin/xchain-cli account newkeys --output data/bob
+create account using crypto type default
+create account in data/bob
+# &#x5728;data/bob&#x76EE;&#x5F55;&#x4E0B;&#x4F1A;&#x770B;&#x5230;&#x6587;&#x4EF6;address&#xFF0C;publickey&#xFF0C;privatekey&#x751F;&#x6210;
+
+
+# &#x521B;&#x5EFA;&#x5408;&#x7EA6;&#x8D26;&#x53F7;
+$ ./bin/xchain-cli account new --account 1111111111111111 --fee 1000000
+</code></pre><h4 id="22-&#x67E5;&#x8BE2;&#x4F59;&#x989D;">2.2 &#x67E5;&#x8BE2;&#x4F59;&#x989D;</h4>
+<p>&#x666E;&#x901A;&#x8D26;&#x6237;&#x67E5;&#x8BE2;&#x4F59;&#x989D;&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x5982;&#x4E0B;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;</p>
+<pre><code># &#x6839;&#x636E;&#x8D26;&#x6237;&#x5B58;&#x50A8;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x67E5;&#x8BE2;&#x8BE5;&#x8D26;&#x6237;&#x7684;&#x4F59;&#x989D;&#x3002;--keys&#x4E3A;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x8D26;&#x6237;&#x7684;&#x5730;&#x5740;
+$ ./bin/xchain-cli account balance --keys data/keys
+100000000000338000000
+
+# &#x6839;&#x636E;&#x5730;&#x5740;&#x67E5;&#x8BE2;&#x8BE5;&#x8D26;&#x6237;&#x4F59;&#x989D;
+$ bin/xchain-cli account balance TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY
+100000000000401000000
+</code></pre><h4 id="23-&#x8F6C;&#x8D26;">2.3 &#x8F6C;&#x8D26;</h4>
+<p>&#x8F6C;&#x8D26;&#x64CD;&#x4F5C;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x6E90;&#x8D26;&#x53F7;&#x7684;&#x79C1;&#x94A5;&#x76EE;&#x5F55;,&#x8FD9;&#x91CC;&#x6CE8;&#x610F;&#x5230;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x76EE;&#x6807;&#x8D26;&#x53F7;&#x7684;&#x4EFB;&#x4F55;&#x5BC6;&#x94A5;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x5730;&#x5740;&#x5373;&#x53EF;.&#x4E0B;&#x9762;&#x6F14;&#x793A;&#xFF1A;&#x8282;&#x70B9;&#x7ED9;bob&#x8D26;&#x6237;&#x8F6C;&#x8D26;&#x3002;&#xFF08;bob&#x8D26;&#x53F7;&#x521B;&#x5EFA;&#x5982;&#x4E0A;&#xFF09;</p>
+<pre><code>#&#x5F97;&#x5230;&#x8D26;&#x53F7;bob&#x8D26;&#x53F7;&#x5730;&#x5740;
+$ cat data/bob/address &amp;&amp; echo
+czojZcZ6cHSiDVJ4jFoZMB1PjKnfUiuFQ
+
+#--keys &#x4ECE;&#x6B64;&#x5730;&#x5740; &#x8F6C;&#x7ED9; --to&#x5730;&#x5740; --amount &#x91D1;&#x989D;
+$ ./bin/xchain-cli transfer --to czojZcZ6cHSiDVJ4jFoZMB1PjKnfUiuFQ --amount 10 --keys data/keys/ -H 127.0.0.1:37101
+24d53ea6e61ede8dc4fe65a04fd30da17c079a359e700738f8795dfddc55ffb4
+</code></pre><p>&#x547D;&#x4EE4;&#x6267;&#x884C;&#x7684;&#x8FD4;&#x56DE;&#x662F;&#x8F6C;&#x8D26;&#x64CD;&#x4F5C;&#x7684;&#x4EA4;&#x6613;id</p>
+<h4 id="24-&#x67E5;&#x8BE2;&#x4EA4;&#x6613;">2.4 &#x67E5;&#x8BE2;&#x4EA4;&#x6613;</h4>
+<p>&#x8F6C;&#x8D26;&#x6210;&#x529F;&#x8FD4;&#x56DE;&#x4EA4;&#x6613;id,&#x63A5;&#x7740;&#x4E0A;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x6F14;&#x793A;&#x6839;&#x636E;&#x4EA4;&#x6613;id,&#x67E5;&#x8BE2;&#x4EA4;&#x6613;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code># &#x53EF;&#x67E5;&#x8BE2;&#x4E0A;&#x4E00;&#x6B65;&#x751F;&#x6210;&#x7684;txid&#x7684;&#x4EA4;&#x6613;&#x4FE1;&#x606F;
+$ ./bin/xchain-cli tx query 24d53ea6e61ede8dc4fe65a04fd30da17c079a359e700738f8795dfddc55ffb4 -H 127.0.0.1:37101
+{
+   &quot;txid&quot;: &quot;24d53ea6e61ede8dc4fe65a04fd30da17c079a359e700738f8795dfddc55ffb4&quot;,
+   &quot;blockid&quot;: &quot;e83eae0750d0f48cc2b45f25d853fb587d124552851bf6693757e0715837b377&quot;,
+   &quot;txInputs&quot;: [
+    {
+      &quot;refTxid&quot;: &quot;2650aa0c0e8088def98093a327b475fa7577fa8e266c5775435f7c022fe0f463&quot;,
+      &quot;refOffset&quot;: 0,
+      &quot;fromAddr&quot;: &quot;TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY&quot;,
+      &quot;amount&quot;: &quot;1000000&quot;
+    }
    ],
-  &quot;peers&quot;: null,
-  &quot;speeds&quot;: {}
+  ......
+  &quot;authRequireSigns&quot;: [
+   {
+      &quot;publickey&quot;: &quot;{\&quot;Curvname\&quot;:\&quot;P-256\&quot;,\&quot;X\&quot;:36505150171354363400464126431978257855318414556425194490762274938603757905292,\&quot;Y\&quot;:79656876957602994269528255245092635964473154458596947290316223079846501380076}&quot;,
+      &quot;sign&quot;: &quot;30460221009509e35b1341284b5d1f22b48c862ecfe2856056196c5650bc203b8a4ed0d454022100f8d286c63ad8eb3bc605bc08da4ff417aaff3c0433a31039f608bb47a90b1267&quot;
+    }
+   ],
+  &quot;receivedTimestamp&quot;: 1628596303271475925,
+  &quot;modifyBlock&quot;: {
+    &quot;marked&quot;: false,
+    &quot;effectiveHeight&quot;: 0,
+    &quot;effectiveTxid&quot;: &quot;&quot;
+  }
+}
+</code></pre><h4 id="25-&#x67E5;&#x8BE2;block-&#x4FE1;&#x606F;">2.5 &#x67E5;&#x8BE2;block &#x4FE1;&#x606F;</h4>
+<p>&#x901A;&#x8FC7;blockid&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x533A;&#x5757;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x533A;&#x5757;&#x5185;&#x6253;&#x5305;&#x7684;&#x4EA4;&#x6613;&#x3001;&#x6240;&#x5728;&#x94FE;&#x7684;&#x9AD8;&#x5EA6;&#x3001;&#x524D;&#x9A71;/&#x540E;&#x7EE7;&#x533A;&#x5757;&#x7684;id&#x7B49;&#x5185;&#x5BB9;</p>
+<pre><code># &#x53EF;&#x67E5;&#x8BE2;&#x4E0A;&#x4E00;&#x6B65;&#x4EA4;&#x6613;&#x6240;&#x5728;&#x7684;block id&#x4FE1;&#x606F;
+$ ./bin/xchain-cli block e83eae0750d0f48cc2b45f25d853fb587d124552851bf6693757e0715837b377 -H 127.0.0.1:37101
+
+{
+  &quot;version&quot;: 1,
+  &quot;blockid&quot;: &quot;e83eae0750d0f48cc2b45f25d853fb587d124552851bf6693757e0715837b377&quot;,
+  &quot;preHash&quot;: &quot;41c74e22ccea7dcf1db6ba0d7e1eefd6cfbd7bac7659c3d8cd33d2a009201003&quot;,
+  &quot;proposer&quot;: &quot;TeyyPLpp9L7QAcxHangtcHTu7HUZ6iydY&quot;,
+  &quot;sign&quot;: &quot;3044021f349da2d5c238175a6e7df23262eeb122014f0a0040fc4ce109a3ab2c22b2700221009d92198061193fcd47e25c8f5c2b54e1ea2ffb4aaab675384c4d6408ab2b63de&quot;,
+  &quot;pubkey&quot;: &quot;{\&quot;Curvname\&quot;:\&quot;P-256\&quot;,\&quot;X\&quot;:36505150171354363400464126431978257855318414556425194490762274938603757905292,\&quot;Y\&quot;:79656876957602994269528255245092635964473154458596947290316223079846501380076}&quot;,
+  &quot;merkleRoot&quot;: &quot;d22d2423a93911e42f96370167d878f6780fea44fac6a13771c7532e1969c949&quot;,
+  &quot;height&quot;: 492,
+  ......
+  &quot;txCount&quot;: 2,
+  &quot;merkleTree&quot;: [
+    &quot;4a7e42654cf79d6525f6b6d55673b57a92048ee96de950e962db99b102e048a4&quot;,
+    &quot;24d53ea6e61ede8dc4fe65a04fd30da17c079a359e700738f8795dfddc55ffb4&quot;,
+    &quot;d22d2423a93911e42f96370167d878f6780fea44fac6a13771c7532e1969c949&quot;
+  ],
+  &quot;inTrunk&quot;: true,
+  &quot;nextHash&quot;: &quot;a541ed97789537166bec5778aad7ba0f68e52a04d1073b244ee1ea6cd38d8f63&quot;,
+  &quot;failedTxs&quot;: null,
+  &quot;curTerm&quot;: 0,
+  &quot;curBlockNum&quot;: 0,
+  &quot;justify&quot;: {}
 }
 </code></pre>
                                 
@@ -731,12 +658,12 @@ $ ./bin/xchain-cli status -H 127.0.0.1:37101
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 快速入门 ">
+                <a href="MatrixChain环境部署.html" class="navigation navigation-prev " aria-label="Previous page: MatrixChain环境部署">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="入门操作.html" class="navigation navigation-next " aria-label="Next page: 入门操作">
+                <a href="../advance-use/" class="navigation navigation-next " aria-label="Next page: 进阶使用">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -747,7 +674,7 @@ $ ./bin/xchain-cli status -H 127.0.0.1:37101
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"xchain环境部署","level":"1.2.1","depth":2,"next":{"title":"入门操作","level":"1.2.2","depth":2,"path":"quick-start/入门操作.md","ref":"quick-start/入门操作.md","articles":[]},"previous":{"title":"快速入门 ","level":"1.2","depth":1,"path":"quick-start/README.md","ref":"quick-start/README.md","articles":[{"title":"xchain环境部署","level":"1.2.1","depth":2,"path":"quick-start/xchain环境部署.md","ref":"quick-start/xchain环境部署.md","articles":[]},{"title":"入门操作","level":"1.2.2","depth":2,"path":"quick-start/入门操作.md","ref":"quick-start/入门操作.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"quick-start/xchain环境部署.md","mtime":"2021-11-23T03:54:05.162Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-24T06:49:01.788Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"常用操作","level":"1.2.2","depth":2,"next":{"title":"进阶使用","level":"1.3","depth":1,"path":"advance-use/README.md","ref":"advance-use/README.md","articles":[{"title":"合约管理","level":"1.3.1","depth":2,"path":"advance-use/合约管理.md","ref":"advance-use/合约管理.md","articles":[]},{"title":"共识使用","level":"1.3.2","depth":2,"path":"advance-use/共识文档.md","ref":"advance-use/共识文档.md","articles":[]},{"title":"链上治理","level":"1.3.3","depth":2,"path":"advance-use/链上治理.md","ref":"advance-use/链上治理.md","articles":[]},{"title":"平行链群组","level":"1.3.4","depth":2,"path":"advance-use/平行链群组.md","ref":"advance-use/平行链群组.md","articles":[]},{"title":"权限管理","level":"1.3.5","depth":2,"path":"advance-use/权限管理ACL.md","ref":"advance-use/权限管理ACL.md","articles":[]},{"title":"联盟链","level":"1.3.6","depth":2,"path":"advance-use/联盟链.md","ref":"advance-use/联盟链.md","articles":[]},{"title":"压测使用","level":"1.3.7","depth":2,"path":"advance-use/压测使用.md","ref":"advance-use/压测使用.md","articles":[]},{"title":"监管机制使用","level":"1.3.8","depth":2,"path":"advance-use/监管机制.md","ref":"advance-use/监管机制.md","articles":[]}]},"previous":{"title":"MatrixChain环境部署","level":"1.2.1","depth":2,"path":"quick-start/MatrixChain环境部署.md","ref":"quick-start/MatrixChain环境部署.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"quick-start/常用操作.md","mtime":"2021-11-30T06:14:52.784Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-30T07:18:24.621Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
