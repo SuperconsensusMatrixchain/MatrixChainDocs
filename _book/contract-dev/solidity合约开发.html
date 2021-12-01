@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>配置解析 · GitBook</title>
+        <title>solidity合约开发 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="源码解读.html" />
+    <link rel="next" href="cpp合约开发.html" />
     
     
-    <link rel="prev" href="README.md" />
+    <link rel="prev" href="java合约开发.html" />
     
 
     </head>
@@ -341,7 +341,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../contract-dev/READMD.md">
+        <li class="chapter " data-level="1.5" data-path="READMD.md">
             
                 <span>
             
@@ -355,9 +355,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../contract-dev/go合约开发.html">
+        <li class="chapter " data-level="1.5.1" data-path="go合约开发.html">
             
-                <a href="../contract-dev/go合约开发.html">
+                <a href="go合约开发.html">
             
                     
                     go合约开发
@@ -368,9 +368,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../contract-dev/java合约开发.html">
+        <li class="chapter " data-level="1.5.2" data-path="java合约开发.html">
             
-                <a href="../contract-dev/java合约开发.html">
+                <a href="java合约开发.html">
             
                     
                     java合约开发
@@ -381,9 +381,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../contract-dev/solidity合约开发.html">
+        <li class="chapter active" data-level="1.5.3" data-path="solidity合约开发.html">
             
-                <a href="../contract-dev/solidity合约开发.html">
+                <a href="solidity合约开发.html">
             
                     
                     solidity合约开发
@@ -394,9 +394,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../contract-dev/cpp合约开发.html">
+        <li class="chapter " data-level="1.5.4" data-path="cpp合约开发.html">
             
-                <a href="../contract-dev/cpp合约开发.html">
+                <a href="cpp合约开发.html">
             
                     
                     cpp合约开发
@@ -522,7 +522,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="README.md">
+        <li class="chapter " data-level="1.7" data-path="../more-info/README.md">
             
                 <span>
             
@@ -536,9 +536,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.7.1" data-path="配置解析.html">
+        <li class="chapter " data-level="1.7.1" data-path="../more-info/配置解析.html">
             
-                <a href="配置解析.html">
+                <a href="../more-info/配置解析.html">
             
                     
                     配置解析
@@ -549,9 +549,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="源码解读.html">
+        <li class="chapter " data-level="1.7.2" data-path="../more-info/源码解读.html">
             
-                <a href="源码解读.html">
+                <a href="../more-info/源码解读.html">
             
                     
                     源码结构解析
@@ -597,7 +597,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >配置解析</a>
+        <a href=".." >solidity合约开发</a>
     </h1>
 </div>
 
@@ -612,124 +612,83 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="1-conf&#x76EE;&#x5F55;">1 conf&#x76EE;&#x5F55;</h4>
-<p>conf&#x6587;&#x4EF6;&#x5939;&#x6709;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x76EE;&#x524D;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
-<table>
-<thead>
-<tr>
-<th>&#x76EE;&#x5F55;&#x540D;</th>
-<th>&#x529F;&#x80FD;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>conf/</td>
-<td>&#x914D;&#x7F6E;&#x76EE;&#x5F55;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; contract.yaml</td>
-<td>&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;wasm/evm/native&#x914D;&#x7F6E;&#x7EC6;&#x8282;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; engine.yaml</td>
-<td>&#x5F15;&#x64CE;&#x914D;&#x7F6E;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; env.yaml</td>
-<td>&#x5404;&#x7EC4;&#x4EF6;&#x914D;&#x7F6E;&#x8DEF;&#x5F84;&#x548C;metric&#x5F00;&#x5173;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; ledger.yaml</td>
-<td>&#x8D26;&#x672C;&#x5B58;&#x50A8;&#x914D;&#x7F6E;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; log.yaml</td>
-<td>&#x65E5;&#x5FD7;&#x914D;&#x7F6E;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; network.yaml</td>
-<td>p2p&#x7F51;&#x7EDC;&#x914D;&#x7F6E;</td>
-</tr>
-<tr>
-<td>&#x251C;&#x2500; server.yaml</td>
-<td>&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;&#x5404;&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#x914D;&#x7F6E;&#x548C;TLS&#x5F00;&#x5173;</td>
-</tr>
-<tr>
-<td>&#x2514;&#x2500; xchain-cli.yaml</td>
-<td>&#x80CC;&#x4E66;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x5F00;&#x653E;&#x7F51;&#x7EDC;</td>
-</tr>
-</tbody>
-</table>
-<h4 id="2-&#x7F51;&#x7EDC;&#x914D;&#x7F6E;">2 &#x7F51;&#x7EDC;&#x914D;&#x7F6E;</h4>
-<p>network.yaml &#x63CF;&#x8FF0;&#x4E86;xchain&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x60C5;&#x51B5;&#xFF0C;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x529F;&#x80FD;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>module</td>
-<td>&#x6307;&#x5B9A;p2p&#x7EC4;&#x4EF6;&#xFF0C;&#x5305;&#x62EC;p2pv1&#x3001;p2pv2&#x4E24;&#x79CD;&#xFF0C;&#x524D;&#x8005;&#x4E3A;grpc&#x76F4;&#x8FDE;&#x5B9E;&#x73B0;&#xFF0C;&#x540E;&#x8005;&#x4F7F;&#x7528;&#x4E86;libp2p</td>
-</tr>
-<tr>
-<td>address</td>
-<td>&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;ip&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;</td>
-</tr>
-<tr>
-<td>keyPath</td>
-<td>&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x8DEF;&#x5F84;&#xFF0C;&#x8BE5;&#x8DEF;&#x5F84;&#x4E0B;&#x653E;&#x7F6E;&#x7528;&#x4E8E;&#x901A;&#x8BAF;&#x9700;&#x8981;&#x7684;&#x516C;&#x79C1;&#x94A5;&#x5BF9;&#x548C;&#x8BC1;&#x4E66;</td>
-</tr>
-<tr>
-<td>bootNodes</td>
-<td>&#x79CD;&#x5B50;&#x8282;&#x70B9;&#x5730;&#x5740;&#xFF0C;&#x9700;&#x7B26;&#x5408;libp2p&#x5730;&#x5740;&#x8981;&#x6C42;&#xFF0C;&#x6307;&#x5B9A;&#x5BF9;&#x7B49;&#x8282;&#x70B9;&#x5730;&#x5740; &#x672C;&#x5730;&#x8282;&#x70B9;&#x5730;&#x5740;&#x53EF;&#x901A;&#x8FC7;xchain-cli netURL preview &#x67E5;&#x770B;&#xFF0C;&#x6CE8;&#x610F;&#x66FF;&#x4EE3;ip&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x53F7;</td>
-</tr>
-<tr>
-<td>staticNodes</td>
-<td>&#x9759;&#x6001;&#x8282;&#x70B9;&#x5730;&#x5740;&#xFF0C;&#x4E0E;&#x79CD;&#x5B50;&#x914D;&#x7F6E;&#x4E0D;&#x540C;&#xFF0C;&#x8BE5;&#x9009;&#x9879;&#x4E0D;&#x652F;&#x6301;&#x8282;&#x70B9;&#x63A2;&#x8BE2;&#xFF0C;&#x4E3A;&#x9759;&#x6001;&#x76F4;&#x8FDE;&#x914D;&#x7F6E;</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>&#x6CE8;&#x610F;: bootNodes&#x5728;&#x914D;&#x7F6E;&#x65F6;&#xFF0C;&#x4E0D;&#x8981;&#x94FE;&#x63A5;&#x672C;&#x5730;&#x5F53;&#x524D;&#x8282;&#x70B9;</li>
-</ul>
-<h4 id="3-&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;">3 &#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;</h4>
-<p>server.yaml &#x63CF;&#x8FF0;&#x4E86;xchain&#x5404;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#x60C5;&#x51B5;&#xFF0C;&#x5177;&#x4F53;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x529F;&#x80FD;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>rpcPort</td>
-<td>xchain&#x670D;&#x52A1;&#x7AEF;&#x53E3;</td>
-</tr>
-<tr>
-<td>metricPort</td>
-<td>xchain&#x670D;&#x52A1;promethues&#x6253;&#x70B9;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;</td>
-</tr>
-<tr>
-<td>GWPort</td>
-<td>xchain http&#x670D;&#x52A1;&#x7AEF;&#x53E3;</td>
-</tr>
-<tr>
-<td>enableEndorser</td>
-<td>xchain&#x670D;&#x52A1;&#x662F;&#x5426;&#x5F00;&#x542F;&#x80CC;&#x4E66;&#x5F00;&#x5173;</td>
-</tr>
-<tr>
-<td>enableTls</td>
-<td>xchain&#x670D;&#x52A1;&#x662F;&#x5426;&#x4F7F;&#x7528;TLS&#x901A;&#x4FE1;</td>
-</tr>
-</tbody>
-</table>
-<h4 id="4-&#x521B;&#x4E16;&#x5757;&#x914D;&#x7F6E;">4 &#x521B;&#x4E16;&#x5757;&#x914D;&#x7F6E;</h4>
-<p>&#x521B;&#x4E16;&#x5757;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728;/data/genesis/&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF0C;xuper.json&#x662F;xchain&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x521B;&#x4E16;&#x5757;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x4F59;&#x4E3A;&#x793A;&#x4F8B;&#x6587;&#x4EF6;&#x3002;</p>
+                                <h3 id="11-&#x73AF;&#x5883;&#x51C6;&#x5907;">1.1 &#x73AF;&#x5883;&#x51C6;&#x5907;</h3>
+<p>&#x76EE;&#x524D; XuperChain &#x8282;&#x70B9;&#x4E3B;&#x8981;&#x8FD0;&#x884C;&#x5728;linux&#x548C;mac&#x4E0A;&#xFF0C;windows&#x4E0D;&#x80FD;&#x8FD0;&#x884C; XuperChain &#x8282;&#x70B9;&#x3002;</p>
+<ol>
+<li>go &gt;= 1.12.x &amp;&amp; &lt;= 1.13.x</li>
+<li>g++ &gt;= 4.8.2 &#x6216;&#x8005; clang++ &gt;= 3.3</li>
+</ol>
+<p>&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x53EA;&#x6709;&#x90E8;&#x7F72;&#x5230;&#x94FE;&#x4E0A;&#x624D;&#x80FD;&#x8FD0;&#x884C;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x8981;&#x7F16;&#x8BD1;&#x5E76;&#x542F;&#x52A8;xuperchain&#x8282;&#x70B9; &#x3002;&#x53C2;&#x8003;&#x73AF;&#x5883;&#x90E8;&#x7F72;&#x5C0F;&#x8282;&#x3002;</p>
+<h3 id="12-&#x521B;&#x5EFA;&#x5408;&#x7EA6;&#x8D26;&#x53F7;">1.2 &#x521B;&#x5EFA;&#x5408;&#x7EA6;&#x8D26;&#x53F7;</h3>
+<p>&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x5408;&#x7EA6;&#x7BA1;&#x7406;&#xFF0C;&#x6BD4;&#x5982;&#x5408;&#x7EA6;&#x7684;&#x6743;&#x9650;&#x63A7;&#x5236;&#x7B49;&#xFF0C;&#x8981;&#x90E8;&#x7F72;&#x5408;&#x7EA6;&#x5FC5;&#x987B;&#x521B;&#x5EFA;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#xFF0C;&#x540C;&#x65F6;&#x5408;&#x7EA6;&#x8D26;&#x53F7;&#x91CC;&#x9762;&#x9700;&#x8981;&#x6709;&#x5145;&#x8DB3;&#x7684;xuper&#x6765;&#x90E8;&#x7F72;&#x5408;&#x7EA6;&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x5408;&#x7EA6;&#x8D26;&#x53F7;XC1111111111111111@xuper.</p>
+<pre><code>$ ./bin/xchain-cli account new --account 1111111111111111 --fee 2000
+contract response:
+        {
+            &quot;pm&quot;: {
+                &quot;rule&quot;: 1,
+                &quot;acceptValue&quot;: 1.0
+            },
+            &quot;aksWeight&quot;: {
+                &quot;dpzuVdosQrF2kmzumhVeFQZa1aYcdgFpN&quot;: 1.0
+            }
+        }
+The gas you cousume is: 1000
+The fee you pay is: 2000
+Tx id: d62704970705a2682e2bd2c5b4f791065871fd45f64c87815b91d8a00039de35
+account name: XC1111111111111111@xuper
+</code></pre><p>&#x7ED9;&#x5408;&#x7EA6;&#x8F6C;&#x8D26;</p>
+<pre><code>$ ./bin/xchain-cli transfer --to XC1111111111111111@xuper --amount 100000000
+cd26657006f6f75f07bd53ad0a7fe74d76985cd592542d8cc87dc3fcdde115f5
+</code></pre><h3 id="13-solc&#x7F16;&#x8BD1;&#x5668;&#x5B89;&#x88C5;">1.3 solc&#x7F16;&#x8BD1;&#x5668;&#x5B89;&#x88C5;</h3>
+<pre><code>sudo add-apt-repository ppa:ethereum/ethereum
+sudo add-apt-repository ppa:ethereum/ethereum-dev
+sudo apt-get update
+sudo apt-get install solc
+</code></pre><h3 id="14-&#x7F16;&#x5199;&#x5408;&#x7EA6;">1.4 &#x7F16;&#x5199;&#x5408;&#x7EA6;</h3>
+<p>&#x53C2;&#x8003;&#x6837;&#x4F8B;</p>
+<pre><code>pragma solidity &gt;=0.0.0;
 
+contract Counter {
+    address owner;
+    mapping (string =&gt; uint256) values;
+
+    constructor() public{
+        owner = msg.sender;
+    }
+
+    function increase(string memory key) public payable{
+        values[key] = values[key] + 1;
+    }
+
+    function get(string memory key) view public returns (uint) {
+        return values[key];
+    }
+
+    function getOwner() view public returns (address) {
+        return owner;
+    }
+
+}
+</code></pre><h3 id="15-&#x7F16;&#x8BD1;&#x5408;&#x7EA6;">1.5 &#x7F16;&#x8BD1;&#x5408;&#x7EA6;</h3>
+<pre><code># &#x901A;&#x8FC7;solc&#x7F16;&#x8BD1;&#x5408;&#x7EA6;&#x6E90;&#x7801;
+$ solc --bin --abi Counter.sol -o .
+# &#x5408;&#x7EA6;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x548C;abi&#x6587;&#x4EF6;&#x5206;&#x522B;&#x5B58;&#x653E;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;Counter.bin&#x548C;Counter.abi
+</code></pre><ul>
+<li><code>--bin</code> &#xFF1A;&#x8868;&#x793A;&#x9700;&#x8981;&#x751F;&#x6210;&#x5408;&#x7EA6;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</li>
+<li><code>--abi</code> &#xFF1A;&#x8868;&#x793A;&#x9700;&#x8981;&#x751F;&#x6210;&#x5408;&#x7EA6;abi&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x5408;&#x7EA6;&#x65B9;&#x6CD5;&#x4EE5;&#x53CA;&#x53C2;&#x6570;&#x7F16;&#x89E3;&#x7801;</li>
+<li><code>-o</code>&#xFF1A;&#x8868;&#x793A;&#x7F16;&#x8BD1;&#x7ED3;&#x679C;&#x8F93;&#x51FA;&#x8DEF;&#x5F84;</li>
+</ul>
+<h3 id="16-&#x90E8;&#x7F72;&#x8C03;&#x7528;&#x5408;&#x7EA6;">1.6 &#x90E8;&#x7F72;&#x8C03;&#x7528;&#x5408;&#x7EA6;</h3>
+<pre><code>#&#x90E8;&#x7F72;
+./bin/xchain-cli evm deploy --account XC1111111111111111@xuper --cname counterevm  --fee 5200000 Counter.bin --abi Counter.abi
+
+#&#x8C03;&#x7528;
+# &#x5408;&#x7EA6;increase&#x65B9;&#x6CD5;&#x8C03;&#x7528;
+$ xchain-cli evm invoke --method increase -a &apos;{&quot;key&quot;:&quot;stones&quot;}&apos; counterevm --fee 22787517 --abi Counter.abi
+# &#x5408;&#x7EA6;get&#x65B9;&#x6CD5;&#x8C03;&#x7528;
+$ xchain-cli evm query --method get -a &apos;{&quot;key&quot;:&quot;stones&quot;}&apos; counterevm --abi Counter.abi
+</code></pre>
                                 
                                 </section>
                             
@@ -756,12 +715,12 @@
 
             
                 
-                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: 更多资料">
+                <a href="java合约开发.html" class="navigation navigation-prev " aria-label="Previous page: java合约开发">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="源码解读.html" class="navigation navigation-next " aria-label="Next page: 源码结构解析">
+                <a href="cpp合约开发.html" class="navigation navigation-next " aria-label="Next page: cpp合约开发">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -772,7 +731,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"配置解析","level":"1.7.1","depth":2,"next":{"title":"源码结构解析","level":"1.7.2","depth":2,"path":"more-info/源码解读.md","ref":"more-info/源码解读.md","articles":[]},"previous":{"title":"更多资料","level":"1.7","depth":1,"path":"more-info/README.md","ref":"more-info/README.md","articles":[{"title":"配置解析","level":"1.7.1","depth":2,"path":"more-info/配置解析.md","ref":"more-info/配置解析.md","articles":[]},{"title":"源码结构解析","level":"1.7.2","depth":2,"path":"more-info/源码解读.md","ref":"more-info/源码解读.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"more-info/配置解析.md","mtime":"2021-11-24T06:25:19.296Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-01T03:59:02.356Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"solidity合约开发","level":"1.5.3","depth":2,"next":{"title":"cpp合约开发","level":"1.5.4","depth":2,"path":"contract-dev/cpp合约开发.md","ref":"contract-dev/cpp合约开发.md","articles":[]},"previous":{"title":"java合约开发","level":"1.5.2","depth":2,"path":"contract-dev/java合约开发.md","ref":"contract-dev/java合约开发.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"contract-dev/solidity合约开发.md","mtime":"2021-12-01T03:47:18.199Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-01T03:59:02.356Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

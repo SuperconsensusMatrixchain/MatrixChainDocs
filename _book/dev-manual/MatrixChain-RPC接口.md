@@ -499,6 +499,63 @@ message Transaction {
 
 Transaction属于XuperChain中比较核心的结构
 
+#### 1.1.17 QueryUtxoRecord
+
+查询一个用户的utxo情况，多少笔utxo
+
+#### 1.1.18 QueryContractStatData
+
+查询合约数据：多少个合约，多少个合约账号
+
+#### 1.1.19 GetAccountContracts
+
+获取一个用户的合约数量
+
+#### 1.1.20 GetConsensusStatus
+
+获取共识状态
+
+#### 1.1.21 GetAccountByAK
+
+
+
+#### 1.1.22 GetAddressContracts
+
+
+
+#### 1.1.23 Subscribe
+
+区块事件订阅
+
+#### 1.1.25 EndorserCall
+
+背书服务调用接口
+
+#### 1.1.26 其他接口（暂未实现）
+
+```
+  rpc DposCandidates(DposCandidatesRequest) returns (DposCandidatesResponse);
+  //  DposNominateRecords get all records nominated by an user
+  rpc DposNominateRecords(DposNominateRecordsRequest)
+      returns (DposNominateRecordsResponse);
+  //  DposNomineeRecords get nominated record of a candidate
+  rpc DposNomineeRecords(DposNomineeRecordsRequest)
+      returns (DposNomineeRecordsResponse);
+  //  DposVoteRecords get all vote records voted by an user
+  rpc DposVoteRecords(DposVoteRecordsRequest) returns (DposVoteRecordsResponse);
+  //  DposVotedRecords get all vote records of a candidate
+  rpc DposVotedRecords(DposVotedRecordsRequest)
+      returns (DposVotedRecordsResponse);
+  //  DposCheckResults get check results of a specific term
+  rpc DposCheckResults(DposCheckResultsRequest)
+      returns (DposCheckResultsResponse);
+
+  // DposStatus get dpos status
+  rpc DposStatus(DposStatusRequest) returns (DposStatusResponse);
+```
+
+
+
 ### 1.2 RPC接口应用
 
 #### 1.2.1 发起一次转账

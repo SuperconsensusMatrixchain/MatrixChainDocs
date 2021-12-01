@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../design-principle/README.md" />
+    <link rel="next" href="../contract-dev/READMD.md" />
     
     
     <link rel="prev" href="Java-SDK使用说明.html" />
@@ -275,7 +275,7 @@
                 <span>
             
                     
-                    开发手册
+                    矩链开发手册
             
                 </a>
             
@@ -341,7 +341,78 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../design-principle/README.md">
+        <li class="chapter " data-level="1.5" data-path="../contract-dev/READMD.md">
+            
+                <span>
+            
+                    
+                    矩链合约开发手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../contract-dev/go合约开发.html">
+            
+                <a href="../contract-dev/go合约开发.html">
+            
+                    
+                    go合约开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../contract-dev/java合约开发.html">
+            
+                <a href="../contract-dev/java合约开发.html">
+            
+                    
+                    java合约开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../contract-dev/solidity合约开发.html">
+            
+                <a href="../contract-dev/solidity合约开发.html">
+            
+                    
+                    solidity合约开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../contract-dev/cpp合约开发.html">
+            
+                <a href="../contract-dev/cpp合约开发.html">
+            
+                    
+                    cpp合约开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../design-principle/README.md">
             
                 <span>
             
@@ -355,7 +426,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../design-principle/整体流程.html">
+        <li class="chapter " data-level="1.6.1" data-path="../design-principle/整体流程.html">
             
                 <a href="../design-principle/整体流程.html">
             
@@ -368,7 +439,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../design-principle/密码学基础.html">
+        <li class="chapter " data-level="1.6.2" data-path="../design-principle/密码学基础.html">
             
                 <a href="../design-principle/密码学基础.html">
             
@@ -381,7 +452,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../design-principle/P2P网络.html">
+        <li class="chapter " data-level="1.6.3" data-path="../design-principle/P2P网络.html">
             
                 <a href="../design-principle/P2P网络.html">
             
@@ -394,7 +465,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../design-principle/共识算法.html">
+        <li class="chapter " data-level="1.6.4" data-path="../design-principle/共识算法.html">
             
                 <a href="../design-principle/共识算法.html">
             
@@ -407,7 +478,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../design-principle/账本状态机.html">
+        <li class="chapter " data-level="1.6.5" data-path="../design-principle/账本状态机.html">
             
                 <a href="../design-principle/账本状态机.html">
             
@@ -420,7 +491,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="../design-principle/权限管理.html">
+        <li class="chapter " data-level="1.6.6" data-path="../design-principle/权限管理.html">
             
                 <a href="../design-principle/权限管理.html">
             
@@ -433,7 +504,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.7" data-path="../design-principle/平行链群组.html">
+        <li class="chapter " data-level="1.6.7" data-path="../design-principle/平行链群组.html">
             
                 <a href="../design-principle/平行链群组.html">
             
@@ -451,7 +522,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../more-info/README.md">
+        <li class="chapter " data-level="1.7" data-path="../more-info/README.md">
             
                 <span>
             
@@ -465,7 +536,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="../more-info/配置解析.html">
+        <li class="chapter " data-level="1.7.1" data-path="../more-info/配置解析.html">
             
                 <a href="../more-info/配置解析.html">
             
@@ -478,7 +549,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="../more-info/源码解读.html">
+        <li class="chapter " data-level="1.7.2" data-path="../more-info/源码解读.html">
             
                 <a href="../more-info/源码解读.html">
             
@@ -1051,7 +1122,40 @@ out, _ := cli.SelectUTXO(context.Background(), in)
     HDInfo HD_info = 33;
 }
 </code></pre><p>Transaction&#x5C5E;&#x4E8E;XuperChain&#x4E2D;&#x6BD4;&#x8F83;&#x6838;&#x5FC3;&#x7684;&#x7ED3;&#x6784;</p>
-<h3 id="12-rpc&#x63A5;&#x53E3;&#x5E94;&#x7528;">1.2 RPC&#x63A5;&#x53E3;&#x5E94;&#x7528;</h3>
+<h4 id="1117-queryutxorecord">1.1.17 QueryUtxoRecord</h4>
+<p>&#x67E5;&#x8BE2;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;utxo&#x60C5;&#x51B5;&#xFF0C;&#x591A;&#x5C11;&#x7B14;utxo</p>
+<h4 id="1118-querycontractstatdata">1.1.18 QueryContractStatData</h4>
+<p>&#x67E5;&#x8BE2;&#x5408;&#x7EA6;&#x6570;&#x636E;&#xFF1A;&#x591A;&#x5C11;&#x4E2A;&#x5408;&#x7EA6;&#xFF0C;&#x591A;&#x5C11;&#x4E2A;&#x5408;&#x7EA6;&#x8D26;&#x53F7;</p>
+<h4 id="1119-getaccountcontracts">1.1.19 GetAccountContracts</h4>
+<p>&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x5408;&#x7EA6;&#x6570;&#x91CF;</p>
+<h4 id="1120-getconsensusstatus">1.1.20 GetConsensusStatus</h4>
+<p>&#x83B7;&#x53D6;&#x5171;&#x8BC6;&#x72B6;&#x6001;</p>
+<h4 id="1121-getaccountbyak">1.1.21 GetAccountByAK</h4>
+<h4 id="1122-getaddresscontracts">1.1.22 GetAddressContracts</h4>
+<h4 id="1123-subscribe">1.1.23 Subscribe</h4>
+<p>&#x533A;&#x5757;&#x4E8B;&#x4EF6;&#x8BA2;&#x9605;</p>
+<h4 id="1125-endorsercall">1.1.25 EndorserCall</h4>
+<p>&#x80CC;&#x4E66;&#x670D;&#x52A1;&#x8C03;&#x7528;&#x63A5;&#x53E3;</p>
+<h4 id="1126-&#x5176;&#x4ED6;&#x63A5;&#x53E3;&#xFF08;&#x6682;&#x672A;&#x5B9E;&#x73B0;&#xFF09;">1.1.26 &#x5176;&#x4ED6;&#x63A5;&#x53E3;&#xFF08;&#x6682;&#x672A;&#x5B9E;&#x73B0;&#xFF09;</h4>
+<pre><code>  rpc DposCandidates(DposCandidatesRequest) returns (DposCandidatesResponse);
+  //  DposNominateRecords get all records nominated by an user
+  rpc DposNominateRecords(DposNominateRecordsRequest)
+      returns (DposNominateRecordsResponse);
+  //  DposNomineeRecords get nominated record of a candidate
+  rpc DposNomineeRecords(DposNomineeRecordsRequest)
+      returns (DposNomineeRecordsResponse);
+  //  DposVoteRecords get all vote records voted by an user
+  rpc DposVoteRecords(DposVoteRecordsRequest) returns (DposVoteRecordsResponse);
+  //  DposVotedRecords get all vote records of a candidate
+  rpc DposVotedRecords(DposVotedRecordsRequest)
+      returns (DposVotedRecordsResponse);
+  //  DposCheckResults get check results of a specific term
+  rpc DposCheckResults(DposCheckResultsRequest)
+      returns (DposCheckResultsResponse);
+
+  // DposStatus get dpos status
+  rpc DposStatus(DposStatusRequest) returns (DposStatusResponse);
+</code></pre><h3 id="12-rpc&#x63A5;&#x53E3;&#x5E94;&#x7528;">1.2 RPC&#x63A5;&#x53E3;&#x5E94;&#x7528;</h3>
 <h4 id="121-&#x53D1;&#x8D77;&#x4E00;&#x6B21;&#x8F6C;&#x8D26;">1.2.1 &#x53D1;&#x8D77;&#x4E00;&#x6B21;&#x8F6C;&#x8D26;</h4>
 <p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x4F7F;&#x7528;RPC&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x4ECE;&#x8D26;&#x53F7;Aclie&#x5411;&#x8D26;&#x53F7;Bob&#x7684;&#x4E00;&#x6B21;&#x6570;&#x989D;&#x4E3A;10&#x7684;&#x8F6C;&#x8D26;&#xFF0C;&#x4E3A;&#x4E86;&#x8FDB;&#x884C;&#x6B64;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x4E8B;&#x5148;&#x9700;&#x8981;&#x6709;&#x4EE5;&#x4E0B;&#x4FE1;&#x606F;&#xFF08;&#x5747;&#x4E3A;string&#xFF09;</p>
 <table>
@@ -1577,7 +1681,7 @@ invokereqs := []*pb.InvokeRequest{invokereq}
                 </a>
                 
                 
-                <a href="../design-principle/README.md" class="navigation navigation-next " aria-label="Next page: 设计原理">
+                <a href="../contract-dev/READMD.md" class="navigation navigation-next " aria-label="Next page: 矩链合约开发手册">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1588,7 +1692,7 @@ invokereqs := []*pb.InvokeRequest{invokereq}
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MatrixChain-rpc接口","level":"1.4.4","depth":2,"next":{"title":"设计原理","level":"1.5","depth":1,"path":"design-principle/README.md","ref":"design-principle/README.md","articles":[{"title":"整体流程","level":"1.5.1","depth":2,"path":"design-principle/整体流程.md","ref":"design-principle/整体流程.md","articles":[]},{"title":"密码学基础","level":"1.5.2","depth":2,"path":"design-principle/密码学基础.md","ref":"design-principle/密码学基础.md","articles":[]},{"title":"P2P网络","level":"1.5.3","depth":2,"path":"design-principle/P2P网络.md","ref":"design-principle/P2P网络.md","articles":[]},{"title":"共识算法","level":"1.5.4","depth":2,"path":"design-principle/共识算法.md","ref":"design-principle/共识算法.md","articles":[]},{"title":"账本状态机","level":"1.5.5","depth":2,"path":"design-principle/账本状态机.md","ref":"design-principle/账本状态机.md","articles":[]},{"title":"权限管理","level":"1.5.6","depth":2,"path":"design-principle/权限管理.md","ref":"design-principle/权限管理.md","articles":[]},{"title":"平行链群组","level":"1.5.7","depth":2,"path":"design-principle/平行链群组.md","ref":"design-principle/平行链群组.md","articles":[]}]},"previous":{"title":"Java-SDK使用说明","level":"1.4.3","depth":2,"path":"dev-manual/Java-SDK使用说明.md","ref":"dev-manual/Java-SDK使用说明.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"dev-manual/MatrixChain-RPC接口.md","mtime":"2021-11-30T07:10:31.599Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-30T07:18:24.621Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MatrixChain-rpc接口","level":"1.4.4","depth":2,"next":{"title":"矩链合约开发手册","level":"1.5","depth":1,"path":"contract-dev/READMD.md","ref":"contract-dev/READMD.md","articles":[{"title":"go合约开发","level":"1.5.1","depth":2,"path":"contract-dev/go合约开发.md","ref":"contract-dev/go合约开发.md","articles":[]},{"title":"java合约开发","level":"1.5.2","depth":2,"path":"contract-dev/java合约开发.md","ref":"contract-dev/java合约开发.md","articles":[]},{"title":"solidity合约开发","level":"1.5.3","depth":2,"path":"contract-dev/solidity合约开发.md","ref":"contract-dev/solidity合约开发.md","articles":[]},{"title":"cpp合约开发","level":"1.5.4","depth":2,"path":"contract-dev/cpp合约开发.md","ref":"contract-dev/cpp合约开发.md","articles":[]}]},"previous":{"title":"Java-SDK使用说明","level":"1.4.3","depth":2,"path":"dev-manual/Java-SDK使用说明.md","ref":"dev-manual/Java-SDK使用说明.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","livereload"],"root":"./docs/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"dev-manual/MatrixChain-RPC接口.md","mtime":"2021-12-01T02:05:11.265Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-01T03:59:02.356Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

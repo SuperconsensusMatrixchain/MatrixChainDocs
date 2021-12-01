@@ -12,11 +12,16 @@
 	* [压测使用](advance-use/压测使用.md)
 	* [监管机制使用](advance-use/监管机制.md)
 
-* [开发手册](dev-manual/README.md)
+* [矩链开发手册](dev-manual/README.md)
 	* [GO-SDK使用说明](dev-manual/GO-SDK使用说明.md)
 	* [JS-SDK使用说明](dev-manual/JS-SDK使用说明.md)
 	* [Java-SDK使用说明](dev-manual/Java-SDK使用说明.md)
 	* [MatrixChain-rpc接口](dev-manual/MatrixChain-RPC接口.md)
+* [矩链合约开发手册](contract-dev/READMD.md)
+	* [go合约开发](contract-dev/go合约开发.md)
+	* [java合约开发](contract-dev/java合约开发.md)
+	* [solidity合约开发](contract-dev/solidity合约开发.md)
+	* [cpp合约开发](contract-dev/cpp合约开发.md)
 
 * [设计原理](design-principle/README.md)
 	* [整体流程](design-principle/整体流程.md)
