@@ -1,6 +1,6 @@
 #### 1.1 下载
 
-JS SDK 代码可在github上下载： [Java SDK](https://github.com/xuperchain/xuper-java-sdk)，可以查看详细的 [文档](https://github.com/xuperchain/xuper-java-sdk/blob/master/README.md)
+JS SDK 代码可在github上下载： [Java SDK](https://github.com/superconsensus/xuper-java-sdk.git)
 
 同时可以使用maven:
 

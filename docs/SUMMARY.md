@@ -10,13 +10,14 @@
 	* [权限管理](advance-use/权限管理ACL.md)
 	* [联盟链](advance-use/联盟链.md)
 	* [压测使用](advance-use/压测使用.md)
-	* [监管机制使用](advance-use/监管机制.md)
 
 * [矩链开发手册](dev-manual/README.md)
 	* [GO-SDK使用说明](dev-manual/GO-SDK使用说明.md)
 	* [JS-SDK使用说明](dev-manual/JS-SDK使用说明.md)
 	* [Java-SDK使用说明](dev-manual/Java-SDK使用说明.md)
 	* [MatrixChain-rpc接口](dev-manual/MatrixChain-RPC接口.md)
+	* [MatrixChain-http接口](dev-manual/MatrixChain-http接口.md)
+
 * [矩链合约开发手册](contract-dev/READMD.md)
 	* [go合约开发](contract-dev/go合约开发.md)
 	* [java合约开发](contract-dev/java合约开发.md)

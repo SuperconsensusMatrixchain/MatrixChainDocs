@@ -29,7 +29,7 @@ sudo apt install make git unzip g++
 
 ### 1.2 编译matrixchain
 - 下载matrixchain源码
-	* git clone  https://github.com/superconsensus/matrixchain.git
+	* git clone  -b formal https://github.com/superconsensus/matrixchain.git
 - 执行命令
 ```
 $ cd matrixchain

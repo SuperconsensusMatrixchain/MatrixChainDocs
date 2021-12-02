@@ -109,4 +109,4 @@ Tx id: d8989ad1bfd2d08bd233b7a09a544cb07976fdf3429144c42f6166d28e9ff695
 
 ### 1.7 cpp合约sdk
 
-更多合约例子参考[cpp-sdk](https://https://github.com/superconsensus/contract-sdk-cpp.git)，在example提供更多例子。
+更多合约例子参考[cpp-sdk](https://https://github.com/superconsensus/contract-sdk-cpp.git)，在example中提供更多例子。
